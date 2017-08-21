@@ -24,7 +24,7 @@ public class AddData {
 
 	/* 생성자 */
 	static{
-
+		/////ttttttt
 		// 파일 명들을 리스트에 저장
 		list = Arrays.asList("Case", "CPU", "HDD", "MainBoard", "ODD", "OperatingSystem",
 				"power", "Ram", "ssd", "vga");
