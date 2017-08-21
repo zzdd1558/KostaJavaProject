@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computer>
+	<header>
+		<num>번호</num>
+		<company>제조회사</company>
+		<name>제품명</name>
+		<etc>상세정보</etc>
+		<price>가격</price>
+	</header>
+	<odd>
+		<num>1</num>
+		<company>LG전자</company>
+		<name>GH24NSD1</name>
+		<etc>제품분류 DVD멀티레코더 / 상세분류 DVD-Multi(DL) / 인터페이스 SATA / 색상 블랙</etc>
+		<price>17400</price>
+	</odd>
+	<odd>
+		<num>2</num>
+		<company>LG전자</company>
+		<name>GP50NB40</name>
+		<etc>제품분류 DVD멀티레코더 / 상세분류 DVD-Multi(DL) / 인터페이스 USB / 색상 블랙</etc>
+		<price>34600</price>
+	</odd>
+	<odd>
+		<num>3</num>
+		<company>LG전자</company>
+		<name>GP50NW40</name>
+		<etc>제품분류 DVD멀티레코더 / 상세분류 DVD-Multi(DL) / 인터페이스 USB / 색상 화이트</etc>
+		<price>34650</price>
+	</odd>
+	<odd>
+		<num>4</num>
+		<company>LG전자</company>
+		<name>GH24NSC0</name>
+		<etc>제품분류 DVD레코더 / 상세분류 M-DISC / 인터페이스 SATA / 색상 블랙</etc>
+		<price>17400</price>
+	</odd>
+	<odd>
+		<num>5</num>
+		<company>LG전자</company>
+		<name>GP60NB50</name>
+		<etc>제품분류 DVD멀티레코더 / 상세분류 DVD-Multi(DL) / 인터페이스 USB / 색상 블랙</etc>
+		<price>42000</price>
+	</odd>
+	<odd>
+		<num>6</num>
+		<company>LG전자</company>
+		<name>GH24NS96</name>
+		<etc>제품분류 DVD레코더 / 상세분류 M-DISC / 인터페이스 SATA / 색상 블랙</etc>
+		<price>16910</price>
+	</odd>
+	<odd>
+		<num>7</num>
+		<company>LG전자</company>
+		<name>DH18NS50</name>
+		<etc>제품분류 DVD-ROM / 상세분류 - / 인터페이스 SATA / 색상 블랙</etc>
+		<price>16170</price>
+	</odd>
+	<odd>
+		<num>8</num>
+		<company>LG전자</company>
+		<name>DH18NS61</name>
+		<etc>제품분류 DVD-ROM / 상세분류 - / 인터페이스 SATA / 색상 블랙</etc>
+		<price>15230</price>
+	</odd>
+	<odd>
+		<num>9</num>
+		<company>ASUS</company>
+		<name>SDRW-08D2S-U</name>
+		<etc>제품분류 DVD레코더 / 상세분류 - / 인터페이스 USB / 색상 블랙</etc>
+		<price>36700</price>
+	</odd>
+	<odd>
+		<num>10</num>
+		<company>ASUS</company>
+		<name>DRW-24D5MT</name>
+		<etc>제품분류 DVD레코더 / 상세분류 - / 인터페이스 SATA / 색상 화이트</etc>
+		<price>15750</price>
+	</odd>
+	<odd>
+		<num>11</num>
+		<company>Lite-On</company>
+		<name>iHAS124</name>
+		<etc>제품분류 DVD멀티레코더 / 상세분류 DVD-Multi / 인터페이스 SATA / 색상 블랙</etc>
+		<price>14180</price>
+	</odd>
+	<odd>
+		<num>12</num>
+		<company>Lite-On</company>
+		<name>eBAU108</name>
+		<etc>제품분류 DVD레코더 / 상세분류 - / 인터페이스 USB2.0 / 색상 블랙</etc>
+		<price>28140</price>
+	</odd>
+	<odd>
+		<num>13</num>
+		<company>Lite-On</company>
+		<name>8ACSH</name>
+		<etc>제품분류 DVD멀티레코더 / 상세분류 DVD-Multi / 인터페이스 SATA / 색상 화이트</etc>
+		<price>31800</price>
+	</odd>
+	<odd>
+		<num>14</num>
+		<company>Lite-On</company>
+		<name>iHAS324</name>
+		<etc>제품분류 DVD레코더 / 상세분류 - / 인터페이스 SATA / 색상 블랙</etc>
+		<price>17120</price>
+	</odd>
+	<odd>
+		<num>15</num>
+		<company>Lite-On</company>
+		<name>DH-24AFSH</name>
+		<etc>제품분류 DVD레코더 / 상세분류 DVD-RW / 인터페이스 SATA / 색상 블랙</etc>
+		<price>14300</price>
+	</odd>
+	<odd>
+		<num>16</num>
+		<company>Lite-On</company>
+		<name>eBAU108-21/W</name>
+		<etc>제품분류 DVD레코더 / 상세분류 - / 인터페이스 SATA / 색상 화이트</etc>
+		<price>29150</price>
+	</odd>
+</computer>

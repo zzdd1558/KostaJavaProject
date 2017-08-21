@@ -1,0 +1,151 @@
+<computer>
+	<caseheader>
+		<num>제품 번호</num>
+		<name>제품 이름</name>
+		<company>제조 회사</company>
+		<price>가격</price>
+		<etc>세부 사항
+		메인보드 케이스 타입/ 크기 / 파워 포함 여부 / 측면 구성 / 오디오 / CPU쿨러 장착 높이
+		</etc>
+	</caseheader>
+	<case>
+		<num>1</num>
+		<name>ABKO NCORE 볼트론 USB 3.0</name>
+		<company>ABKO</company>
+		<price>28000</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 157mm</etc>
+	</case>
+	<case>
+		<num>2</num>
+		<name>ABKO NCORE 볼트론 USB 3.0</name>
+		<company>ABKO</company>
+		<price>37800</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 157mm</etc>
+	</case>
+	<case>
+		<num>3</num>
+		<name>아이구주 I-3AL 실버 and 화이트 USB 3.0</name>
+		<company>아이구주</company>
+		<price>34500</price>
+		<etc>PC케이스(M-ATX) / 미니타워 / 파워미포함 / 측면 통풍구  / HD AUDIO / CPU쿨러:최대 75mm</etc>
+	</case>
+	<case>
+		<num>4</num>
+		<name>아이구주 I-3AL 실버 and 화이트 USB 3.0</name>
+		<company>아이구주</company>
+		<price>47800</price>
+		<etc>PC케이스(M-ATX) / 미니타워 / 파워미포함 / 측면 통풍구  / HD AUDIO / CPU쿨러:최대 75mm</etc>
+	</case>
+	<case>
+		<num>5</num>
+		<name>ABKO NCORE 볼트론 USB 3.0</name>
+		<company>ABKO</company>
+		<price>23700</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 157mm </etc>
+	</case>
+	<case>
+		<num>6</num>
+		<name>대양케이스 NEXT USB 3.0 풀 아크릴 Blue LED</name>
+		<company>대양케이스</company>
+		<price>29000</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 155mm</etc>
+	</case>
+	<case>
+		<num>7</num>
+		<name>COX A3 노빌레 풀아크릴윈도우 with 헤일로X4 블랙</name>
+		<company>COX</company>
+		<price>44000</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:156mm</etc>
+	</case>
+	<case>
+		<num>8</num>
+		<name>ABKO SUITMASTER 330S 강화유리 with HALO 블랙</name>
+		<company>ABKO</company>
+		<price>59000</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 강화유리 / HD AUDIO / CPU쿨러:최대 162mm</etc>
+	</case>
+	<case>
+		<num>9</num>
+		<name>마이크로닉스 Frontier H300 화이트</name>
+		<company>마이크로닉스</company>
+		<price>24400</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 /측면 아크릴 / HD AUDIO / CPU쿨러:최대 156mm</etc>
+	</case>
+	<case>
+		<num>10</num>
+		<name>대양케이스 NEON USB 3.0 RGB LED Strips 풀 아크릴 윈도우</name>
+		<company>대양케이스</company>
+		<price>31190</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함/ 측면 아크릴  / HD AUDIO / CPU쿨러:160mm</etc>
+	</case>
+	<case>
+		<num>11</num>
+		<name>ABKO NCORE 사파이어 3.0 풀아크릴 and 강화유리</name>
+		<company>ABKO</company>
+		<price>46000</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함  / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 159mm</etc>
+	</case>
+	<case>
+		<num>12</num>
+		<name>아이구주 M1 타이푼 RING LED and 강화유리</name>
+		<company>아이구주</company>
+		<price>36000</price>
+		<etc>PC케이스(M-ATX) / 미니타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 150mm</etc>
+	</case>
+	<case>
+		<num>13</num>
+		<name>3RSYS T1000</name>
+		<company>3RSYS</company>
+		<price>193000</price>
+		<etc>PC케이스(ATX) / 빅타워 / 파워미포함 / 측면 강화유리 / HD AUDIO / CPU쿨러:최대 180mm</etc>
+	</case>
+	<case>
+		<num>14</num>
+		<name>COX A5 벨로체 USB3.0 풀 아크릴 윈도우 블랙</name>
+		<company>COX</company>
+		<price>31000</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 162mm</etc>
+	</case>
+	<case>
+		<num>15</num>
+		<name>마이크로닉스 팰콘 실버</name>
+		<company>마이크로닉스</company>
+		<price>41200</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 157mm</etc>
+	</case>
+	<case>
+		<num>16</num>
+		<name>BRAVOTEC 스텔스 EX270 파노라마 윈도우 블랙</name>
+		<company>BRAVOTEC</company>
+		<price>58000</price>
+		<etc>PC케이스(ATX) / 빅타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 165mm</etc>
+	</case>
+	<case>
+		<num>17</num>
+		<name>BRAVOTEC 스텔스 EX270 파노라마 윈도우 블랙</name>
+		<company>BRAVOTEC</company>
+		<price>62400</price>
+		<etc>PC케이스(ATX) / 빅타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 165mm</etc>
+	</case>
+	<case>
+		<num>18</num>
+		<name>마이크로닉스 Frontier H300 블랙</name>
+		<company>마이크로닉스</company>
+		<price>24400</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 156mm</etc>
+	</case>
+	<case>
+		<num>19</num>
+		<name>마이크로닉스 Frontier H300 블랙</name>
+		<company>마이크로닉스</company>
+		<price>38100</price>
+		<etc>PC케이스(ATX) / 미들타워 / 파워미포함 / 측면 아크릴 / HD AUDIO / CPU쿨러:최대 156mm</etc>
+	</case>
+	<case>
+		<num>20</num>
+		<name>SAMA STALLION K901B Zero NOISE 강화유리 BLACK</name>
+		<company>SAMA</company>
+		<price>94000</price>
+		<etc>PC케이스(ATX) / 빅타워 / 파워미포함 / 측면 강화유리 / HD AUDIO / CPU쿨러:180mm </etc>
+	</case>
+</computer>

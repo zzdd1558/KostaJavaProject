@@ -1,0 +1,151 @@
+<computer>
+	<header>
+		<num>제품 번호</num>
+		<name>제품 이름</name>
+		<company>제조 회사</company>
+		<price>가격</price>
+		<etc>세부 사항
+		규격 / 출력 / 메인보드전원 / IDE용 / SATA용 / 보조파워
+		</etc>
+	</header>
+	<case>
+		<num>1</num>
+		<name>마이크로닉스 Classic II 500W +12V Single Rail 85+</name>
+		<company>마이크로닉스</company>
+		<price>40600</price>
+		<etc>ATX 파워 / 정격 500W / 20핀+4핀 / 4핀 IDE x3 / SATA x6 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>2</num>
+		<name>마이크로닉스 Classic II 600W +12V Single Rail 85+</name>
+		<company>마이크로닉스</company>
+		<price>48900</price>
+		<etc>ATX 파워 / 정격 600W / 20핀+4핀 / 4핀 IDE x4 / SATA x6 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>3</num>
+		<name>마이크로닉스 Classic II 700W +12V Single Rail 85+</name>
+		<company>마이크로닉스</company>
+		<price>65500</price>
+		<etc>ATX 파워 / 정격 700W / 20핀+4핀 / 4핀 IDE x4 / SATA x6 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>4</num>
+		<name>마이크로닉스 Performance II PV 700W 80Plus Bronze Surge 4K</name>
+		<company>마이크로닉스</company>
+		<price>102270</price>
+		<etc>ATX 파워 / 정격 700W / 20핀+4핀 / 4핀 IDE x4 / SATA x6 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>5</num>
+		<name>마이크로닉스 Performance II HV 850W Bronze</name>
+		<company>마이크로닉스</company>
+		<price>137500</price>
+		<etc>ATX 파워 / 표기 850W / 20핀+4핀 / 4핀 IDE x5 / SATA x10 / 6+2핀 PCI-E x6</etc>
+	</case>
+	<case>
+		<num>6</num>
+		<name>FSP HYPER K 500W 80PLUS Standard 230V EU</name>
+		<company>FSP</company>
+		<price>41400</price>
+		<etc>ATX 파워 / 정격 500W / 20핀+4핀 / 4핀 IDE x3 / SATA x6 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>7</num>
+		<name>FSP HYPER K 600W 80PLUS Standard 230V EU</name>
+		<company>FSP</company>
+		<price>51500</price>
+		<etc>ATX 파워 / 정격 600W / 20핀+4핀 / 4핀 IDE x3 / SATA x6 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>8</num>
+		<name>FSP DAGGER 600W SFX 80PLUS GOLD</name>
+		<company>FSP</company>
+		<price>149000</price>
+		<etc>SFX 파워 / 600W / 24핀 전용 / SATA x5 / 4핀 IDEx2 / 6+2핀 PCI-E x2 </etc>
+	</case>
+	<case>
+		<num>9</num>
+		<name>FSP Hydro G 750W</name>
+		<company>FSP</company>
+		<price>155000</price>
+		<etc>ATX 파워 / 정격 750W / 20핀+4핀 / 4핀 IDE x6 / SATA x12 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>10</num>
+		<name>FSP Hydro G 650W</name>
+		<company>FSP</company>
+		<price>137980</price>
+		<etc>ATX 파워 / 정격 650W / 20핀+4핀 / 4핀 IDE x5 / SATA x10 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>11</num>
+		<name>POWEREX REX III 500W Triple V2.3</name>
+		<company>POWEREX</company>
+		<price>37600</price>
+		<etc>ATX 파워 / 정격 500W / 20핀+4핀 / 4핀 IDE x3 / SATA x5 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>12</num>
+		<name>POWEREX REX III 600W Triple V2.3</name>
+		<company>POWEREX</company>
+		<price>45400</price>
+		<etc>ATX 파워 / 정격 600W / 20핀+4핀 /4핀 IDE x3 / SATA x5 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>13</num>
+		<name>POWEREX REX III 500W Edge +12V Single Rail</name>
+		<company>POWEREX</company>
+		<price>38000</price>
+		<etc>ATX 파워 / 정격 500W / 20핀+4핀 / 4핀 IDE x3 / SATA x5 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>14</num>
+		<name>POWEREX REXIII DS 700W Single rail 12V DC to DC</name>
+		<company>POWEREX</company>
+		<price>59500</price>
+		<etc>ATX 파워 / 정격 700W / 20핀+4핀 / 4핀 IDE x3 / SATA x5 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>15</num>
+		<name>POWEREX LEGEND 800W Lite 80PLUS 브론즈</name>
+		<company>POWEREX</company>
+		<price>92000</price>
+		<etc>ATX 파워 / 정격 800W / 20핀+4핀 / 4핀 IDE x3 / SATA x5 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>16</num>
+		<name>SuperFlower SF-600R12A NOVA 80PLUS</name>
+		<company>SuperFlower</company>
+		<price>53000</price>
+		<etc>ATX 파워 / 정격 600W / 20핀+4핀 / 4핀 IDE x4 / SATA x6 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>17</num>
+		<name>SuperFlower SF-650F14MT LEADEX SILVER (WHITE)</name>
+		<company>SuperFlower</company>
+		<price>98000</price>
+		<etc>ATX 파워 / 정격 650W / 20핀+4핀 / 4핀 IDE x3 / SATA x6 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>18</num>
+		<name>SuperFlower SF-500R12A NOVA 80PLUS</name>
+		<company>SuperFlower</company>
+		<price>42990</price>
+		<etc>ATX 파워 / 정격 500W / 20핀+4핀 / 4핀 IDE x4 / SATA x6 / 6+2핀 PCI-E x2</etc>
+	</case>
+	<case>
+		<num>19</num>
+		<name>SuperFlower SF-750F14MT LEADEX SILVER</name>
+		<company>SuperFlower</company>
+		<price>127920</price>
+		<etc>ATX 파워 / 정격 750W / 20핀+4핀 / 4핀 IDE x4 / SATA x9 / 6+2핀 PCI-E x4</etc>
+	</case>
+	<case>
+		<num>20</num>
+		<name>SuperFlower SF-600R14SE Silver Green FX</name>
+		<company>SuperFlower</company>
+		<price>77100</price>
+		<etc>ATX 파워 / 정격 600W / 20핀+4핀 / 4핀 IDE x4 / SATA x5 / 6+2핀 PCI-E x2</etc>
+	</case>
+</computer>
