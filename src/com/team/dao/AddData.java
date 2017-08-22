@@ -100,7 +100,7 @@ public class AddData {
 					// 0.Case 1.CPU 2.HDD 3.MainBoard 4.ODD 5.OperatingSystem 6.Power 7.Ram 8.ssd
 					// 9.vga
 					result = ItemDao.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s)+""));
-					// �떎�뙣�떆�뿉 �삱�씪�삱 �븿�닔
+					// 0이면 추가 실패.
 					if (result == 0) {
 						System.out.println("실패했습니다.");
 						break;
