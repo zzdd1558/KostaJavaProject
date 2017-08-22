@@ -3,9 +3,9 @@ package com.team.mypage;
 import java.util.List;
 import java.util.Scanner;
 
-import com.team.Service.ComputerServiceTest;
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
+import com.team.test.Test;
 import com.team.util.Service;
 
 public class MemberInfoService implements Service {
@@ -50,7 +50,7 @@ public class MemberInfoService implements Service {
 
 		String content = scan.next();
 
-		if (member.updateMember(ComputerServiceTest.userId, content, update) != 0)
+		if (member.updateMember(Test.userId, content, update) != 0)
 			System.out.println("성공입니다.");
 		else
 			System.out.println("실패입니다.");
