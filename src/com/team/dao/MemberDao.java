@@ -73,7 +73,7 @@ public class MemberDao {
 	}//end of deleteAll
 	
 	
-	// �쉶�썝�젙蹂� 異쒕젰
+	// 멤버 리스트 출력
 	public List<MemberDTO> memberList() {
 		Connection con = DBUtil.getConnection();
 		String sql = "select * from userInfo where id = ?";
