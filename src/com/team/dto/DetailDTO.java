@@ -9,7 +9,7 @@ public class DetailDTO {
 	// 생성자 
 	public DetailDTO() {
 	}
-	///
+	//
 	public DetailDTO(int orderNum, int itemNum, int amount) {
 		super();
 		this.orderNum = orderNum;
