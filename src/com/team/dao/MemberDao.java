@@ -9,9 +9,12 @@ import java.util.List;
 
 import com.team.dto.MemberDTO;
 import com.team.util.DBUtil;
+
+/** DB의 Member 테이블 데이터 추가,제거,수정을 담당하는 클래스 */
 public class MemberDao {
 
-	// 회원정보 출력
+	/* 함수 */
+	/** 회원 정보 출력 */
 	public List<MemberDTO> memberList() {
 		Connection con = DBUtil.getConnection();
 		String sql = "select * from userInfo where id = ?";
@@ -42,7 +45,8 @@ public class MemberDao {
 		return list;
 	} // end of memberList
 	
-	// 이름 변경
+	/** 이름 변경 */
+	//
 	public int updateName(String id) {
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
