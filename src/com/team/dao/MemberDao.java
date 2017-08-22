@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.team.Service.ComputerServiceTest;
 import com.team.dto.MemberDTO;
-import com.team.mypage.Member;
 import com.team.util.DBUtil;
 public class MemberDao {
 
@@ -23,7 +23,7 @@ public class MemberDao {
 		try {
 			pstmt = con.prepareStatement(sql);
 			
-			pstmt.setString(1, Member.userId);
+			pstmt.setString(1, ComputerServiceTest.userId);
 
 			rs = pstmt.executeQuery();
 
