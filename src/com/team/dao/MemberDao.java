@@ -19,8 +19,9 @@ public class MemberDao {
 
 	/* 함수 */
 	/** Member 레코드를 추가하는 함수 */
-	public static void add(MemberDTO m) {
+	public static int add(MemberDTO m) {
 
+		int result = 0;
 		Connection c = null;
 		PreparedStatement ps = null;
 		sql = "insert into member values(?,?,?,?,?,?,?)";
@@ -38,7 +39,7 @@ public class MemberDao {
 			ps.setString(6, m.getAddr());
 			ps.setString(7, m.getPhone());
 
-			ps.executeUpdate();
+			result = ps.executeUpdate();
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -47,6 +48,7 @@ public class MemberDao {
 			DBUtil.close(c, ps);
 		}
 
+		return result;
 	}// end of add
 
 	/** Member 레코드를 모두 삭제하는 함수 */
@@ -167,5 +169,38 @@ public class MemberDao {
 		return m;
 
 	}// end of checkMember
+	
+	/** 아이디 중복 조회 */
+	public static boolean checkId(String id) {
+		
+		boolean exist = false;
+		
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		sql = "select * from member where id = ?";
+		
+		try {
+			
+			//Connection과 쿼리문 생성 및 실행
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, id);
+			rs = ps.executeQuery();
+			
+			//만약 ResultSet에 무언가가 존재한다면 중복
+			if(rs.next())
+				exist = true;
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+		
+		return exist;
+		
+	}//end of checkId
 
 } // end of class
