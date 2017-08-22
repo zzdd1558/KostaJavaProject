@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.team.dto.MemberDTO;
+import com.team.mypage.Member;
 import com.team.util.DBUtil;
 public class MemberDao {
 
@@ -22,7 +23,7 @@ public class MemberDao {
 		try {
 			pstmt = con.prepareStatement(sql);
 			
-//			pstmt.setString(1, Member.userID);
+			pstmt.setString(1, Member.userId);
 
 			rs = pstmt.executeQuery();
 
@@ -42,113 +43,25 @@ public class MemberDao {
 		return list;
 	} // end of memberList
 	
-	// 이름 변경
-	public int updateName(String id) {
+	// 내용 변경 			(기준 id,	 변경 내용,		 기존 내용)
+	public int updateMember(String id, String content, String update ) {
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
 		int result = 0;
-		String sql = "update table name set colume = ? "
-				+ " where colume = ?";
+		String sql = "update table member set " + update + " = ? "
+				+ " where id = ?";
 		try {
 			
 			pstmt = con.prepareStatement(sql);
 			
-			// 바꿀 이름
-			pstmt.setString(1, id); 
+			// 바꿀 내
+			pstmt.setString(1, content); 
 			
 			// 기존 이름
-//			pstmt.setString(2, MyPage.userId); 
+			pstmt.setString(2, id); 
 			
 			result = pstmt.executeUpdate();
 			
-			
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			DBUtil.close(con, pstmt);
-		}
-		return result;
-	}
-	
-	// 이메일 변경
-	public int updateMail(){
-		Connection con = DBUtil.getConnection();
-		PreparedStatement pstmt = null;
-		int result = 0;
-		String sql = "update table mail set colume = ? "
-				+ " where colume = ?";
-		try {
-			
-			pstmt = con.prepareStatement(sql);
-			
-//			// 바꿀 이메일
-//			pstmt.setString(1, id); 
-//			
-//			// 기존 이메일
-//			pstmt.setString(2, MyPage.userId); 
-			
-			result = pstmt.executeUpdate();
-			
-			
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			DBUtil.close(con, pstmt);
-		}
-		return result;
-		
-	}
-	
-	// 주소 변경
-	public int updateAddr(){
-		Connection con = DBUtil.getConnection();
-		PreparedStatement pstmt = null;
-		int result = 0;
-		String sql = "update table addr set colume = ? "
-				+ " where colume = ?";
-		try {
-//			
-//			pstmt = con.prepareStatement(sql);
-//			
-//			// 바꿀 주소
-//			pstmt.setString(1, id); 
-//			
-//			// 기존 주소
-//			pstmt.setString(2, MyPage.userId); 
-//			
-			result = pstmt.executeUpdate();
-//			
-			
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			DBUtil.close(con, pstmt);
-		}
-		return result;
-	}
-	
-	// 번호 변경
-	public int updatepghone(){
-		Connection con = DBUtil.getConnection();
-		PreparedStatement pstmt = null;
-		int result = 0;
-		String sql = "update table phone set colume = ? "
-				+ " where colume = ?";
-		try {
-//			
-//			pstmt = con.prepareStatement(sql);
-//			
-//			// 바꿀 번호
-//			pstmt.setString(1, id); 
-//			
-//			// 기존 번호
-//			pstmt.setString(2, MyPage.userId); 
-//			
-			result = pstmt.executeUpdate();
-//			
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
