@@ -25,30 +25,34 @@ public class MemberInfoService implements Service{
 		
 		System.out.println("수정할 정보 선택\n1. 이름\n2. 이메일\n3. 주소\n4. 전화번호");
 		int num = scan.nextInt();
+		String update = "";
 		switch (num) {
 		case 1:
 			System.out.println("이름 수정");
-			String id = scan.next();
-//			member.updateName(id, Member.userId);
-			
+			update = "name";
 			break;
 		case 2:
 			System.out.println("이메일 수정");
-			String mail = scan.next();
-			
+			update = "mail";
 			break;
 		case 3:
 			System.out.println("주소 수정");
-			String addr = scan.next();
+		    update = "addr";
 			break;
 		case 4:
 			System.out.println("전화번호 수정");
-			String phone = scan.next();
+			update = "phone";
 			break;
-
 		default:
 			break;
 		}
+		
+		String content = scan.next();
+		
+		if(member.updateMember(Member.userId, content, update) != 0)
+			System.out.println("성공입니다.");
+		else
+			System.out.println("실패입니다.");
 		
 		
 		

@@ -36,9 +36,13 @@ public class AddData {
 	public static void initiate() {
 		
 		// 모든 데이터 삭제 primary key 를 포함하는 순서로 제거
+		EventDao.deleteAll();
 		SequenceDao.deleteAll();
 		ItemDao.deleteAll();
 		ItemListDao.deleteAll();
+		MemberDao.deleteAll();
+		OrdersDao.deleteAll();
+		DetailDao.deleteAll();
 		
 		// 모든 데이터 삽입 foreign key 를 포함하는 순서로 생성
 		SequenceDao.add();
@@ -100,7 +104,10 @@ public class AddData {
 					// 0.Case 1.CPU 2.HDD 3.MainBoard 4.ODD 5.OperatingSystem 6.Power 7.Ram 8.ssd
 					// 9.vga
 					result = ItemDao.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s)+""));
+
 					// 결과 확인
+
+					// 0이면 추가 실패.
 					if (result == 0) {
 						System.out.println("실패했습니다.");
 						break;
@@ -115,11 +122,5 @@ public class AddData {
 		}
 
 	}// end of addItemData
-	
-	private static String getCode(int index) {
-		
-		return list.get(index);
-		
-	}//end of getCode
 
 }// end of AddData
