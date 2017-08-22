@@ -133,6 +133,47 @@ public class MemberDao {
 		return result;
 	}// end of updateMember
 	
+	/** 아이디와 비밀번호를 통해 Member를 반환하는 함수 */
+	public static MemberDTO checkMember(String id, String pwd) {
+		
+		MemberDTO m = null;
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		sql = "select * from member where id = ?";
+		
+		try {
+			
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, id);
+			rs = ps.executeQuery();
+			
+			if(rs.next()) {
+				m = new MemberDTO();
+				m.setId(id);
+				m.setAddr(rs.getString("addr"));
+				m.setBirth(rs.getString("birth"));
+				m.setPwd(rs.getString("pwd"));
+				m.setMail(rs.getString("mail"));
+				m.setPhone(rs.getString("phone"));
+				
+				//비밀번호가 일치하지 않으면 null 대입
+				if(!pwd.equals(rs.getString("pwd")))
+					m = null;
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+		
+		return m;
+		
+	}//end of checkMember
+	
 } // end of class
 
 
