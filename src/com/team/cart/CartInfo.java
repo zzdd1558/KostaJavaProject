@@ -22,6 +22,7 @@ public class CartInfo implements Service {
 	public void exec(Scanner scan) {
 		// TODO Auto-generated method stub
 		
+		// Search(êµ¬ë§¤í•˜ë ¤ê³  ë‹´ì€ ëª©ë¡) ë³´ì—¬ì£¼ê¸°
 		Map<Integer, Integer> map = new HashMap<>();
 		List<ItemDTO> list = new ArrayList<>();
 		
@@ -33,8 +34,8 @@ public class CartInfo implements Service {
 			System.out.println(list.get(i));
 		}
 		
-		
-		System.out.println("1.ÁÖ¹®ÇÏ±â\n2.¼öÁ¤ÇÏ±â");
+		// ì¥ë°”êµ¬ë‹ˆì— ë‹´ì•„ë†“ì€ ëª©ë¡ ì£¼ë¬¸í•˜ê¸°, ìˆ˜ì •í•˜ê¸°
+		System.out.println("1.ì£¼ë¬¸í•˜ê¸°\n2.ì¥ë°”êµ¬ë‹ˆìˆ˜ì •í•˜ê¸°");
 		
 		int key = scan.nextInt();
 		
@@ -45,7 +46,7 @@ public class CartInfo implements Service {
 			break;
 			
 		case 2:
-			System.out.println("¼öÁ¤ÇÒ ºÎÇ°Á¾·ù¸¦ ¼±ÅÃÇÏ¼¼¿ä");
+			System.out.println("ìˆ˜ì •í•  ë¶€í’ˆì¢…ë¥˜ë¥¼ ì„ íƒí•˜ì„¸ìš”");
 			System.out.println("1.Case 2.CPU 3.HDD 4.MainBoard 5.ODD\n" + "6.OperatingSystem 7.power 8.Ram 9.ssd 10.vga");
 					
 			int i = scan.nextInt();
