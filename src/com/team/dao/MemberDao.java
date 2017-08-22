@@ -43,18 +43,18 @@ public class MemberDao {
 		return list;
 	} // end of memberList
 	
-	// 내용 변경 			(기준 id,	 변경 내용,		 기존 내용)
+	// 내용 변경 			(기준 id,	 변경 내용,		 바꿀 항목)
 	public int updateMember(String id, String content, String update ) {
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
 		int result = 0;
-		String sql = "update table member set " + update + " = ? "
+		String sql = "update table member set " + update  + " = ? "
 				+ " where id = ?";
 		try {
 			
 			pstmt = con.prepareStatement(sql);
 			
-			// 바꿀 내
+			// 바꿀 내용
 			pstmt.setString(1, content); 
 			
 			// 기존 이름
