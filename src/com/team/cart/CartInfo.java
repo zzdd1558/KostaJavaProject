@@ -16,7 +16,7 @@ public class CartInfo implements Service {
 	public void exec(Scanner scan) {
 		// TODO Auto-generated method stub
 
-		// Search(구매하려고 담은 목록) 보여주기
+		// Search(구매하려고 담은 목록) 보여주기.
 		Map<Integer, Integer> map = new HashMap<>();
 		List<ItemDTO> list = new ArrayList<>();
 
