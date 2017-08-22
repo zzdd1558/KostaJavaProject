@@ -49,7 +49,7 @@ public class Test {
 
 			// 3 윤진
 			case 3:
-
+				
 				break;
 
 			// 4,5 대호
