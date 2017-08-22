@@ -6,9 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 /** DB Connection을 가져오고 Connection 해제를 하는 함수 */
 public class DBUtil {
-	
+
 	/*변수*/
 	private static final String DRIVER_NAME = "oracle.jdbc.driver.OracleDriver";
 	private static final String CONNECTION_INFO = "jdbc:oracle:thin:@localhost:1521:XE";

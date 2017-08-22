@@ -11,6 +11,69 @@ public class ItemDTO {
 	private String listName;
 	
 	
+<<<<<<< HEAD
+	//�깮�꽦�옄
+	public ItemDTO() {
+		// TODO Auto-generated constructor stub
+	}
+	public ItemDTO(int itemNum, String company, String itemName, String etc, String price, String code) {
+		super();
+		this.itemNum = itemNum;
+		this.company = company;
+		this.itemName = itemName;
+		this.etc = etc;
+		this.price = price;
+		this.code = code;
+	}
+	
+	
+	//setter , getter
+	public int getItemNum() {
+		return itemNum;
+	}
+	public void setItemNum(int itemNum) {
+		this.itemNum = itemNum;
+	}
+	public String getCompany() {
+		return company;
+	}
+	public void setCompany(String company) {
+		this.company = company;
+	}
+	public String getItemName() {
+		return itemName;
+	}
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+	public String getEtc() {
+		return etc;
+	}
+	public void setEtc(String etc) {
+		this.etc = etc;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	
+	public String getListName() {
+		return listName;
+	}
+	public void setListName(String listName) {
+		this.listName = listName;
+	}
+	
+}
+=======
 	//생성자
 	public ItemDTO() {
 		// TODO Auto-generated constructor stub
@@ -72,3 +135,4 @@ public class ItemDTO {
 	}
 	
 }
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject

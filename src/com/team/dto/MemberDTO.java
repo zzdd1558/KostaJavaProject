@@ -19,6 +19,8 @@ public class MemberDTO {
 		// TODO Auto-generated constructor stub
 	}
 	
+<<<<<<< HEAD
+=======
 	
 	
 	@Override
@@ -40,6 +42,7 @@ public class MemberDTO {
 
 
 
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject
 	public MemberDTO(String id, String pwd, String name, String birth, String mail, String addr, String phone) {
 		super();
 		this.id = id;

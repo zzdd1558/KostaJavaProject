@@ -1,5 +1,13 @@
 package com.team.dao;
 
+<<<<<<< HEAD
+/** DBÀÇ Member Å×ÀÌºí µ¥ÀÌÅÍ Ãß°¡,Á¦°Å,¼öÁ¤À» ´ã´çÇÏ´Â Å¬·¡½º */
+public class MemberDao {
+
+	
+	
+}//end of MemberDao
+=======
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -7,8 +15,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.team.Service.ComputerServiceTest;
 import com.team.dto.MemberDTO;
+import com.team.test.Test;
 import com.team.util.DBUtil;
 
 /** DBì˜ Member í…Œì´ë¸” ë°ì´í„° ì¶”ê°€,ì œê±°,ìˆ˜ì •ì„ ë‹´ë‹¹í•˜ëŠ” í´ëž˜ìŠ¤ */
@@ -73,7 +81,7 @@ public class MemberDao {
 	}//end of deleteAll
 	
 	
-	// ï¿½ì‰¶ï¿½ìï¿½ì ™è¹‚ï¿½ ç•°ì’•ì °
+	// ë©¤ë²„ ë¦¬ìŠ¤íŠ¸ ì¶œë ¥
 	public List<MemberDTO> memberList() {
 		Connection con = DBUtil.getConnection();
 		String sql = "select * from userInfo where id = ?";
@@ -84,7 +92,7 @@ public class MemberDao {
 		try {
 			pstmt = con.prepareStatement(sql);
 			
-			pstmt.setString(1, ComputerServiceTest.userId);
+			pstmt.setString(1, Test.userId);
 
 			rs = pstmt.executeQuery();
 
@@ -196,3 +204,4 @@ public class MemberDao {
 
 
 
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject

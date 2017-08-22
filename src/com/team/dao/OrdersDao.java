@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+package com.team.dao;
+
+public class OrdersDao {
+
+}
+=======
 package com.team.dao;
 
 import java.sql.Connection;
@@ -68,3 +75,4 @@ public class OrdersDao {
 } // end of orderDao
 
 
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject

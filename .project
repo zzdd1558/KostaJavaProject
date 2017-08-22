@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
+	<name>SmallProject</name>
+=======
 	<name>kostaJavaProject</name>
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject
 	<comment></comment>
 	<projects>
 	</projects>

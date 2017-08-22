@@ -66,5 +66,8 @@ public class OrdersDTO {
 	
 	
 	
+<<<<<<< HEAD
+=======
 	
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject
 }

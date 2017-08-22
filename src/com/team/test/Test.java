@@ -6,8 +6,17 @@ import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
 import com.team.join.LoginService;
 
+import com.team.mypage.MemberInfoService;
+import com.team.order.OrdersInfoService;
+import com.team.util.Service;
+
+
 /** Test를 위한 클래스 */
+
 public class Test {
+
+	// userId : 사용자 ID를 저장하기위 해 임시방편으로 만들어둠
+	public static String userId = "aaa";
 
 	public static void main(String[] args) {
 		
