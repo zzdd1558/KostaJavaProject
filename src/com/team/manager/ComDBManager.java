@@ -13,7 +13,7 @@ public class ComDBManager {
 		
 		switch (key) {
 		case 1:
-			//search 페이지 호출
+			//search 페이지 호출.
 			
 			break;
 			
