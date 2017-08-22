@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-package com.team.dao;
-
-public class EventDao {
-
-}
-=======
 package com.team.dao;
 
 import java.sql.Connection;
@@ -70,4 +63,3 @@ public class EventDao {
 	}//end of deleteAll
 	
 }//end of EventDao
->>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject

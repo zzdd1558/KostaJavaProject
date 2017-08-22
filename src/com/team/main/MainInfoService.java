@@ -3,6 +3,7 @@ package com.team.main;
 import java.util.Scanner;
 
 import com.team.cart.CartInfoService;
+import com.team.mypage.MemberInfoService;
 import com.team.util.Service;
 
 public class MainInfoService implements Service {

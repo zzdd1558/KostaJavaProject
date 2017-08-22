@@ -9,11 +9,7 @@ public class DetailDTO {
 	// 생성자 
 	public DetailDTO() {
 	}
-<<<<<<< HEAD
-	
-=======
-	//
->>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject
+
 	public DetailDTO(int orderNum, int itemNum, int amount) {
 		super();
 		this.orderNum = orderNum;
