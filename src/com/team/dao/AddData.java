@@ -21,7 +21,7 @@ public class AddData {
 
 	/* 변수 */
 	static List<String> list; // 파일 명들을 저장할 변수
-
+//
 	/* 생성자 */
 	static{
 
@@ -35,19 +35,19 @@ public class AddData {
 	/** 테이블 데이터를 초기화 */
 	public static void initiate() {
 		
-		//모든 데이터 삭제 primary key를 포함하는 순서로 제거
+		// 모든 데이터 삭제 primary key 를 포함하는 순서로 제거
 		SequenceDao.deleteAll();
 		ItemDao.deleteAll();
 		ItemListDao.deleteAll();
 		
-		//모든 데이터 삽입 foreign key를 포함하는 순서로 생성
+		// 모든 데이터 삽입 foreign key 를 포함하는 순서로 생성
 		SequenceDao.add();
 		addItemListData();
 		addItemData();
 		
 	}// end of Initiate
 	
-	/** itemlist 데이터를 DB에 저장 */
+	/** itemlist 데이터를 DB에 저장*/
 	private static void addItemListData() {
 		
 		int result = 0;
@@ -76,8 +76,8 @@ public class AddData {
 			// DocumentBuilder 생성
 			DocumentBuilder builder = factory.newDocumentBuilder();
 
-			// xml을 파싱(문서 내부의 데이터 가져오기 - 메모리에 문서 트리 구축)
-			for (String s : list) {
+			// xml을 파싱 ( 문서 내부의 데이터 가져오기 - 메모리에 문서 트리 구축 )
+			for (String s : list) { 
 
 				// 리스트 순서대로 하나씩 파싱
 				Document document = builder.parse(new FileInputStream(s+".xml"));
@@ -100,7 +100,7 @@ public class AddData {
 					// 0.Case 1.CPU 2.HDD 3.MainBoard 4.ODD 5.OperatingSystem 6.Power 7.Ram 8.ssd
 					// 9.vga
 					result = ItemDao.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s)+""));
-					// 실패시에 올라올 함수
+					// �떎�뙣�떆�뿉 �삱�씪�삱 �븿�닔
 					if (result == 0) {
 						System.out.println("실패했습니다.");
 						break;
