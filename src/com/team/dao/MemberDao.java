@@ -9,12 +9,9 @@ import java.util.List;
 
 import com.team.dto.MemberDTO;
 import com.team.util.DBUtil;
-
-/** DB의 Member 테이블 데이터 추가,제거,수정을 담당하는 클래스 */
 public class MemberDao {
 
-	/* 함수 */
-	/** 회원 정보 출력 */
+	// �쉶�썝�젙蹂� 異쒕젰
 	public List<MemberDTO> memberList() {
 		Connection con = DBUtil.getConnection();
 		String sql = "select * from userInfo where id = ?";
@@ -45,8 +42,7 @@ public class MemberDao {
 		return list;
 	} // end of memberList
 	
-	/** 이름 변경 */
-	//
+	// �씠由� 蹂�寃�
 	public int updateName(String id) {
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
@@ -57,10 +53,10 @@ public class MemberDao {
 			
 			pstmt = con.prepareStatement(sql);
 			
-			// 바꿀 이름
+			// 諛붽� �씠由�
 			pstmt.setString(1, id); 
 			
-			// 기존 이름
+			// 湲곗〈 �씠由�
 //			pstmt.setString(2, MyPage.userId); 
 			
 			result = pstmt.executeUpdate();
@@ -75,7 +71,7 @@ public class MemberDao {
 		return result;
 	}
 	
-	// 이메일 변경
+	// �씠硫붿씪 蹂�寃�
 	public int updateMail(){
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
@@ -86,10 +82,10 @@ public class MemberDao {
 			
 			pstmt = con.prepareStatement(sql);
 			
-//			// 바꿀 이메일
+//			// 諛붽� �씠硫붿씪
 //			pstmt.setString(1, id); 
 //			
-//			// 기존 이메일
+//			// 湲곗〈 �씠硫붿씪
 //			pstmt.setString(2, MyPage.userId); 
 			
 			result = pstmt.executeUpdate();
@@ -105,7 +101,7 @@ public class MemberDao {
 		
 	}
 	
-	// 주소 변경
+	// 二쇱냼 蹂�寃�
 	public int updateAddr(){
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
@@ -116,10 +112,10 @@ public class MemberDao {
 //			
 //			pstmt = con.prepareStatement(sql);
 //			
-//			// 바꿀 주소
+//			// 諛붽� 二쇱냼
 //			pstmt.setString(1, id); 
 //			
-//			// 기존 주소
+//			// 湲곗〈 二쇱냼
 //			pstmt.setString(2, MyPage.userId); 
 //			
 			result = pstmt.executeUpdate();
@@ -134,7 +130,7 @@ public class MemberDao {
 		return result;
 	}
 	
-	// 번호 변경
+	// 踰덊샇 蹂�寃�
 	public int updatepghone(){
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
@@ -145,10 +141,10 @@ public class MemberDao {
 //			
 //			pstmt = con.prepareStatement(sql);
 //			
-//			// 바꿀 번호
+//			// 諛붽� 踰덊샇
 //			pstmt.setString(1, id); 
 //			
-//			// 기존 번호
+//			// 湲곗〈 踰덊샇
 //			pstmt.setString(2, MyPage.userId); 
 //			
 			result = pstmt.executeUpdate();
