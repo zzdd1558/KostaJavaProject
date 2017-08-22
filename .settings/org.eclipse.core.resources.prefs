@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 encoding//src/com/team/dto=UTF-8
 encoding//src/com/team/dto/ItemDTO.java=UTF-8
 encoding//src/com/team/util/DBUtil.java=UTF-8
+=======
+encoding/<project>=UTF-8
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject

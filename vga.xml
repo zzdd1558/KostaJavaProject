@@ -1,0 +1,151 @@
+<computer>
+	<header>
+		<num>제품 번호</num>
+		<name>제품 이름</name>
+		<company>제조 회사</company>
+		<price>가격</price>
+		<etc>세부 사항
+		라인업 / 코어클럭 / 데이터전송방식 / D램 / 메모리용량 / 메모리버스
+		</etc>
+	</header>
+	<case>
+		<num>1</num>
+		<name>GTX1060</name>
+		<company>이엠텍</company>
+		<price>275300</price>
+		<etc>지포스 GTX1060 / 1506 MHz , 부스트 1708MHz / PCIe3.0x16 / GDDR5(DDR5) / 3GB / 192-bit</etc>
+	</case>
+	<case>
+		<num>2</num>
+		<name>GTX1050</name>
+		<company>이엠텍</company>
+		<price>142000</price>
+		<etc>지포스 GTX1050 / 1366 MHz , 부스트 1468MHz / PCIe3.0x16 / GDDR5(DDR5) / 2GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>3</num>
+		<name>GTX1050 Ti</name>
+		<company>이엠텍</company>
+		<price>195400</price>
+		<etc>지포스 GTX1050 Ti / 1366 MHz , 부스트 1480MHz / PCIe3.0x16 / GDDR5(DDR5) / 4GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>4</num>
+		<name>GTX1070 Super</name>
+		<company>이엠텍</company>
+		<price>589700</price>
+		<etc>지포스 GTX1070 / 1632 MHz , 부스트 1835MHz / PCIe3.0x16 / GDDR5(DDR5) / 8GB / 256-bit</etc>
+	</case>
+	<case>
+		<num>5</num>
+		<name>GTX1080 Super</name>
+		<company>이엠텍</company>
+		<price>719400</price>
+		<etc>지포스 GTX1080 / 1708 MHz , 부스트 1847MHz / PCIe3.0x16 / GDDR5X(DDR5X) / 8GB / 256-bit</etc>
+	</case>
+	<case>
+		<num>6</num>
+		<name>GTX1060 D5</name>
+		<company>ZOTAC</company>
+		<price>268700</price>
+		<etc>지포스 GTX1060 / 1582 MHz , 부스트 1797MHz / PCIe3.0x16 / GDDR5(DDR5) / 3GB / 192-bit</etc>
+	</case>
+	<case>
+		<num>7</num>
+		<name>GTX1080 Ti</name>
+		<company>ZOTAC</company>
+		<price>1081000</price>
+		<etc>지포스 GTX1080 Ti / 1607 MHz , 부스트 1721MHz / PCIe3.0x16 / GDDR5X(DDR5X) / 11GB / 352-bit</etc>
+	</case>
+	<case>
+		<num>8</num>
+		<name>GTX1060 D5</name>
+		<company>ZOTAC</company>
+		<price>357600</price>
+		<etc>지포스 GTX1060 / 1556 MHz , 부스트 1771MHz / PCIe3.0x16 / GDDR5(DDR5) / 6GB / 192-bit</etc>
+	</case>
+	<case>
+		<num>9</num>
+		<name>GTX1050 MINi</name>
+		<company>ZOTAC</company>
+		<price>140700</price>
+		<etc>지포스 GTX1050 / 1354 MHz , 부스트 1455MHz / PCIe3.0x16 / GDDR5(DDR5) / 2GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>10</num>
+		<name>GTX1050 Ti</name>
+		<company>ZOTAC</company>
+		<price>192400</price>
+		<etc>지포스 GTX1050 Ti / 1392 MHz , 부스트 1506MHz / PCIe3.0x16 / GDDR5(DDR5) / 4GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>11</num>
+		<name>GTX1070 게이밍 X</name>
+		<company>MSI</company>
+		<price>585200</price>
+		<etc>지포스 GTX1070 / 1607 MHz , 부스트 1797MHz / PCIe3.0x16 / GDDR5(DDR5) / 8GB / 256-bit</etc>
+	</case>
+	<case>
+		<num>12</num>
+		<name>GTX1050 Ti</name>
+		<company>MSI</company>
+		<price>196500</price>
+		<etc>지포스 GTX1050 Ti / 1341 MHz , 부스트 1455MHz / PCIe3.0x16 / GDDR5(DDR5) / 4GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>13</num>
+		<name>GTX1060 게이밍 X</name>
+		<company>MSI</company>
+		<price>377700</price>
+		<etc>지포스 GTX1060 / 1594 MHz , 부스트 1809MHz / PCIe3.0x16 / GDDR5(DDR5) / 6GB / 192-bit</etc>
+	</case>
+	<case>
+		<num>14</num>
+		<name>GTX1050 OC</name>
+		<company>MSI</company>
+		<price>146100</price>
+		<etc>지포스 GTX1050 / 1404 MHz , 부스트 1518MHz / PCIe3.0x16 / GDDR5(DDR5) / 2GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>15</num>
+		<name>GTX1070 아머 OC</name>
+		<company>MSI</company>
+		<price>530200</price>
+		<etc>지포스 GTX1070 / 1556 MHz , 부스트 1746MHz / PCIe3.0x16 / GDDR5(DDR5) / 8GB / 256-bit</etc>
+	</case>
+	<case>
+		<num>16</num>
+		<name>RX 560 OC</name>
+		<company>SAPPHIRE</company>
+		<price>130000</price>
+		<etc>라데온 RX 560 / 부스트 1300MHz / PCIe3.0x8 / GDDR5(DDR5) / 2GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>17</num>
+		<name> RX 560 OC</name>
+		<company>SAPPHIRE</company>
+		<price>165000</price>
+		<etc>라데온 RX 560 / 부스트 1300MHz / PCIe3.0x8 / GDDR5(DDR5) / 4GB / 128-bit</etc>
+	</case>
+	<case>
+		<num>18</num>
+		<name>RX 580 OC</name>
+		<company>SAPPHIRE</company>
+		<price>390000</price>
+		<etc>라데온 RX 580 / 부스트 1411MHz / PCIe3.0x16 / GDDR5(DDR5) / 8GB / 256-bit</etc>
+	</case>
+	<case>
+		<num>19</num>
+		<name>RX 570 OC</name>
+		<company>SAPPHIRE</company>
+		<price>362610</price>
+		<etc>라데온 RX 570 / 부스트 1340MHz / PCIe3.0x16 / GDDR5(DDR5) / 4GB / 256-bit</etc>
+	</case>
+	<case>
+		<num>20</num>
+		<name>RX 580 OC</name>
+		<company>SAPPHIRE</company>
+		<price>612620</price>
+		<etc>라데온 RX 580 / 부스트 1430MHz / PCIe3.0x16 / GDDR5(DDR5) / 8GB / 256-bit</etc>
+	</case>
+</computer>

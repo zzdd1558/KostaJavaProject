@@ -1,0 +1,151 @@
+<computer>
+	<mainboardheader>
+		<num>제품 번호</num>
+		<name>제품 이름</name>
+		<price>가격</price>
+		<company>제조 회사</company>
+		<etc>상세 설명
+		cpu와 메인보드 연결방식 / 메인보드 / 한 사이클에 데이터를 동시에 주고 받을 수 있는 DDR / 메인보드가 지원하는 최대 RAM크기 / 저장장치 연결 방법 / USB(2.0) / USB(3.0) / USB(3.1)
+		</etc>
+	</mainboardheader>
+	<mainboard>
+		<num>1</num>
+		<name>GA-B250M-DS3H</name>
+		<price>93800</price>
+		<company>GIGABYTE</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>2</num>
+		<name>RACING B350 GT3</name>
+		<price>102800</price>
+		<company>BIOSTAR</company>
+		<etc>AMD(소켓AM4) / (AMD) B350 / DDR4 / 최대 64GB / (SATA3) 4개 / (USB2.0) 후면 없음 / (USB3.0) 후면 4개 / (USB3.1) 후면 2개</etc>
+	</mainboard>
+	<mainboard>
+		<num>3</num>
+		<name>B250M PRO4 에즈윈</name>
+		<price>99500</price>
+		<company>ASRock</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>4</num>
+		<name>B250M 박격포</name>
+		<price>96400</price>
+		<company>MSI</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>5</num>
+		<name>GA-B250M-DS3H</name>
+		<price>98700</price>
+		<company>GIGABYTE</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>6</num>
+		<name>GIGABYTE GA-AB350M-Gaming 3</name>
+		<price>104900</price>
+		<company>GIGABYTE</company>
+		<etc>AMD(소켓AM4) / (AMD) B350 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 후면 2개</etc>
+	</mainboard>
+	<mainboard>
+		<num>7</num>
+		<name>PRIME B250M-A</name>
+		<price>96900</price>
+		<company>ASUS</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 3개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>8</num>
+		<name>PRIME Z270-A</name>
+		<price>226100</price>
+		<company>ASUS</company>
+		<etc>인텔(소켓1151) / (인텔) Z270 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 후면 2개 </etc>
+	</mainboard>
+	<mainboard>
+		<num>9</num>
+		<name>Battle AXE B250M-D</name>
+		<price>79000</price>
+		<company>COLORFUL</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 4개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>10</num>
+		<name>PRIME B250M-A</name>
+		<price>108400</price>
+		<company>ASUS</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 3개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>11</num>
+		<name>iGame Z270I-WF</name>
+		<price>199000</price>
+		<company>COLORFUL</company>
+		<etc>인텔(소켓1151) / (인텔) Z270 / DDR4 / 최대 64GB / (SATA3) 4개 / (USB2.0) 후면 4개 / (USB3.0) 후면 6개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>12</num>
+		<name>H81H3-M4</name>
+		<price>29000</price>
+		<company>ECS</company>
+		<etc>인텔(소켓1150) / (인텔) H81 / DDR3 / 최대 16GB / (SATA3) 2개 이하 / (USB2.0) 없음 / (USB3.0) 후면 2개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>13</num>
+		<name>H110M4-C21</name>
+		<price>52970</price>
+		<company>ECS</company>
+		<etc>인텔(소켓1151) / (인텔) H110 / DDR4 / 최대 32GB / (SATA3) 4개 / (USB2.0) 없음 / (USB3.0) 후면 2개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>14</num>
+		<name>H110M4-C21</name>
+		<price>82970</price>
+		<company>ECS</company>
+		<etc>인텔(소켓1151) / (인텔) H110 / DDR4 / 최대 32GB / (SATA3) 4개 / (USB2.0) 없음 / (USB3.0) 후면 2개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>15</num>
+		<name>C7-B250-CB-ML</name>
+		<price>100700</price>
+		<company>Supermicro</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 없음</etc>
+	</mainboard>
+	<mainboard>
+		<num>16</num>
+		<name>C7-Z270-CG</name>
+		<price>278500</price>
+		<company>Supermicro</company>
+		<etc>인텔(소켓1151) / (인텔) Z270 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 없음 / (USB3.1) 후면 4개 /</etc>
+	</mainboard>
+	<mainboard>
+		<num>17</num>
+		<name>Z270</name>
+		<price>348400</price>
+		<company>MSI</company>
+		<etc>인텔(소켓1151) / (인텔) Z270 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 3개 / (USB3.0) 후면 2개 / (USB3.1) 후면 2개</etc>
+	</mainboard>
+	<mainboard>
+		<num>18</num>
+		<name>GA-AX370</name>
+		<price>277500</price>
+		<company>GIGABYTE</company>
+		<etc>AMD(소켓AM4) / (AMD) X370 / DDR4 / 최대 64GB / (SATA3) 8개 / (USB2.0) 후면 없음 / (USB3.0) 후면 6개 / (USB3.1) 후면 4개</etc>
+	</mainboard>
+	<mainboard>
+		<num>19</num>
+		<name>PRIME Z270-A</name>
+		<price>130</price>
+		<company>ASUS</company>
+		<etc>인텔(소켓1151) / (인텔) Z270 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 후면 2개 </etc>
+	</mainboard>
+	<mainboard>
+		<num>20</num>
+		<name>GA-B250M-DS3H</name>
+		<price>4800</price>
+		<company>GIGABYTE</company>
+		<etc>인텔(소켓1151) / (인텔) B250 / DDR4 / 최대 64GB / (SATA3) 6개 / (USB2.0) 후면 2개 / (USB3.0) 후면 4개 / (USB3.1) 없음</etc>
+	</mainboard>
+</computer>

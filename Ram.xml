@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computer>
+	<header>
+		<num>제품 번호</num>
+		<name>제품 이름</name>
+		<price>제품 가격</price>
+		<company>회사</company>
+		<etc>상세 설명</etc>
+	</header>
+	<ram>
+		<ddr3>
+			<num>01.</num>
+			<name>DDR3 2G PC3-12800</name>
+			<price>18,000</price>
+			<company>SAMSUNG</company>
+			<etc>DR3 / PC용 / 1ea / 미포함 / Dimm / 2GB / 1,600MHz / 1.50V / 메모리 타이밍
+				: CL11</etc>
+
+			<num>02.</num>
+			<name>DDR3 4G PC3-12800</name>
+			<price>34,000</price>
+			<company>SAMSUNG</company>
+			<etc>DDR3 / PC용 / 1ea / 미포함 / Dimm / 4GB / 1,600MHz / 1.50V / 메모리 타이밍
+				: 11-11-11-30</etc>
+
+			<num>03.</num>
+			<name>DDR3 8G PC3-12800</name>
+			<price>66,000</price>
+			<company>SAMSUNG</company>
+			<etc>DDR3 / PC용 / 1ea / 미포함 / Dimm / 8GB / 1,600MHz</etc>
+
+			<num>04.</num>
+			<name>DDR3 16G PC3-12800</name>
+			<price>75,000</price>
+			<company>SAMSUNG</company>
+			<etc>DDR3 / 서버용 / 1ea / 미포함 / Dimm / 16GB / 1,600MHz / ECC / REG / LP
+				사이즈</etc>
+
+			<num>05.</num>
+			<name>DDR3 4G PC3-14900</name>
+			<price>31,000</price>
+			<company>ESSENCORE</company>
+			<etc>DDR3 / PC용 / 1ea / 포함 / Dimm / 4GB / 1,866MHz / XMP / 1.50V /
+				메모리 타이밍 : 10-11-11</etc>
+
+			<num>06.</num>
+			<name>DDR3 8G PC3-14900</name>
+			<price>55,000</price>
+			<company>ESSENCORE</company>
+			<etc>DDR3 / PC용 / 1ea / 포함 / Dimm / 8GB / 1,866MHz / XMP / 1.50V /
+				메모리 타이밍 : 10-11-11</etc>
+
+			<num>07.</num>
+			<name>DDR3 2G PC3-10600</name>
+			<price>26,000</price>
+			<company>TeamGroup</company>
+			<etc>DDR3 / PC용 / 1ea / 미포함 / Dimm / 2GB / 1,333MHz / CL 9-9-9-24
+			</etc>
+
+			<num>08.</num>
+			<name>DDR3 4G PC3-12800</name>
+			<price>33,000</price>
+			<company>TeamGroup</company>
+			<etc>DDR3 / PC용 / 1ea / 미포함 / Dimm / 2GB / 1,333MHz / CL 9-9-9-24</etc>
+
+			<num>09.</num>
+			<name>DDR3 8G PC3-12800</name>
+			<price>63,000</price>
+			<company>TeamGroup</company>
+			<etc>DDR3 / PC용 / 1ea / 미포함 / Dimm / 8GB / 1,600MHz / 1.50V / 메모리 타이밍
+				: 11-11-11-28 / 동작전압 1.5V</etc>
+
+			<num>10.</num>
+			<name>DDR3 4G PC3-12800</name>
+			<price>31,000</price>
+			<company>타무즈</company>
+			<etc>DDR3 / PC용 / 1ea / 미포함 / Dimm / 4GB / 1,600MHz / 1.50V / 메모리 타이밍
+				: CL11 / 동작전압 1.5V</etc>
+
+			<num>11.</num>
+			<name>DDR3 8G PC3-12800</name>
+			<price>60,000</price>
+			<company>타무즈</company>
+			<etc>DDR3 / PC용 / 1ea / 미포함 / Dimm / 8GB / 1,600MHz / 1.50V / 메모리 타이밍
+				: CL11 / 동작전압 1.5V</etc>
+		</ddr3>
+		<ddr4>
+			<num>12.</num>
+			<name>DDR4 4G PC4-19200</name>
+			<price>35,000</price>
+			<company>SAMSUNG</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 4GB / 2,400MHz</etc>
+
+			<num>13.</num>
+			<name>DDR4 8G PC4-19200</name>
+			<price>75,000</price>
+			<company>SAMSUNG</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 8GB / 2,400MHz</etc>
+
+			<num>14.</num>
+			<name>DDR4 16G PC4-19200</name>
+			<price>175,000</price>
+			<company>SAMSUNG</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 16GB / 2,400MHz</etc>
+
+			<num>15.</num>
+			<name>DDR4 4G PC4-19200</name>
+			<price>39,000</price>
+			<company>ESSENCORE</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 4GB / 2,400MHz / 벌크 / XMP /
+				1.20V</etc>
+
+			<num>16.</num>
+			<name>DDR4 8G PC4-19200</name>
+			<price>78,000</price>
+			<company>ESSENCORE</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 8GB / 2,400MHz / XMP / 1.20V /
+				메모리 타이밍 : 15-15-15
+			</etc>
+
+			<num>17.</num>
+			<name>DDR4 16G PC4-19200</name>
+			<price>163,000</price>
+			<company>ESSENCORE</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 16GB / 2,400MHz / 벌크 / XMP /
+				1.20V
+			</etc>
+
+			<num>18.</num>
+			<name>DDR4 4G PC4-19200</name>
+			<price>36,000</price>
+			<company>TeamGroup</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 4GB / 2,400MHz / 1.20V / 메모리 타이밍
+				: 16-16-16-39 / 동작전압 : 1.20V
+			</etc>
+
+			<num>19.</num>
+			<name>DDR4 8G PC4-19200</name>
+			<price>76,000</price>
+			<company>TeamGroup</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 8GB / 2,400MHz / 1.20V / 메모리 타이밍
+				: 16-16-16-39 /
+			</etc>
+
+			<num>20.</num>
+			<name>DDR4 16G PC4-19200</name>
+			<price>146,000</price>
+			<company>TeamGroup</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 16GB / 2,400MHz / 1.20V / 메모리
+				타이밍 : 16-16-16-39 / 동작전압 : 1.20V
+			</etc>
+
+			<num>21.</num>
+			<name>DDR4 4G PC4-19200</name>
+			<price>35,000</price>
+			<company>타무즈</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 4GB / 2,400MHz / 1.20V / 메모리 타이밍
+				: 17-17-17-39
+			</etc>
+
+			<num>22.</num>
+			<name>DDR4 8G PC4-19200</name>
+			<price>71,000</price>
+			<company>타무즈</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 8GB / 2,400MHz / 1.20V / 메모리 타이밍
+				: 17-17-17-39
+			</etc>
+
+			<num>23.</num>
+			<name>DDR4 16G PC4-19200</name>
+			<price>144,000</price>
+			<company>타무즈</company>
+			<etc>DDR4 / PC용 / 1ea / 미포함 / Dimm / 16GB / 2,400MHz / 1.20V / 메모리
+				타이밍 : 17-17-17-39
+			</etc>
+		</ddr4>
+	</ram>
+</computer>

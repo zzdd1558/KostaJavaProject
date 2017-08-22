@@ -1,0 +1,151 @@
+<computer>
+	<hddheader>
+		<num>제품번호</num>
+		<name>제품이름</name>
+		<price>제품가격</price>
+		<company>제조회사</company>
+		<etc>상세 설명
+		HDD/ 용량/ 데이터 전송방법 및 속도 / 플래터 분당 회전 수 / 버퍼 용량 / 하드디스크 크기
+		</etc>
+	</hddheader>
+	<hdd>
+		<num>1</num>
+		<name>WD20EZRZ</name>
+		<price>71700</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 5,400RPM / 메모리 64MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>2</num>
+		<name>ST2000DM006 </name>
+		<price>73500</price>
+		<company>Seagate</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형) </etc>	
+	</hdd>
+	<hdd>
+		<num>3</num>
+		<name>WD20EZRZ</name>
+		<price>74300</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 5,400RPM / 메모리 64MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>4</num>
+		<name>DT01ACA300</name>
+		<price>92000</price>
+		<company>Toshiba</company>
+		<etc>HDD (PC용) / 3TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>5</num>
+		<name>WD20EZRZ</name>
+		<price>71700</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 5,400RPM / 메모리 64MB / 8.9cm (3.5형) / 두께: 26.1mm</etc>	
+	</hdd>
+	<hdd>
+		<num>6</num>
+		<name>HUH728080ALE600</name>
+		<price>465000</price>
+		<company>HGST</company>
+		<etc>HDD (PC용) / 8TB / SATA3(6Gb/s) / 7,200RPM / 메모리 128MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>7</num>
+		<name>WD20EZRZ</name>
+		<price>83400</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 5,400RPM / 메모리 64MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>8</num>
+		<name>WD10EZEX</name>
+		<price>46400</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 1TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>9</num>
+		<name>ST2000DM006 </name>
+		<price>77800</price>
+		<company>Seagate</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형) </etc>	
+	</hdd>
+<hdd>
+		<num>10</num>
+		<name>ST2000DM006 </name>
+		<price>84700</price>
+		<company>Seagate</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형) </etc>	
+	</hdd>
+	<hdd>
+		<num>11</num>
+		<name>DT01ACA300</name>
+		<price>97800</price>
+		<company>Toshiba</company>
+		<etc>HDD (PC용) / 3TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>12</num>
+		<name>HUH728080ALE600</name>
+		<price>437000</price>
+		<company>HGST</company>
+		<etc>HDD (PC용) / 8TB / SATA3(6Gb/s) / 7,200RPM / 메모리 128MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>13</num>
+		<name>WD2003FZEX</name>
+		<price>159700</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 2TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형) </etc>	
+	</hdd>
+	<hdd>
+		<num>14</num>
+		<name>HD103SM</name>
+		<price>155560</price>
+		<company>삼성전자</company>
+		<etc>HDD (PC용) / 1TB / SATA3(6Gb/s) / 7,200RPM / 메모리 32MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>15</num>
+		<name>ThinkPad</name>
+		<price>83600</price>
+		<company>레노버</company>
+		<etc>HDD (PC용) / 500GB / SATA3 (6Gb/s) / 7,200RPM / 메모리 32MB / 6.4cm (2.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>16</num>
+		<name>ST2000DX002 </name>
+		<price>120640</price>
+		<company>Seagate</company>
+		<etc>HDD (PC용) / 2TB / SATA3 (6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>17</num>
+		<name>HUH728060ALE600</name>
+		<price>374350</price>
+		<company>HGST</company>
+		<etc>HDD (PC용) / 6TB / SATA3(6Gb/s) / 7,200RPM / 메모리 128MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>18</num>
+		<name>WD4003FZEX</name>
+		<price>268350</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 4TB / SATA3(6Gb/s) / 7,200RPM / 메모리 64MB / 8.9cm (3.5형) </etc>	
+	</hdd>
+	<hdd>
+		<num>19</num>
+		<name>EcoGreen F4</name>
+		<price>233000</price>
+		<company>삼성전자</company>
+		<etc>HDD (PC용) / 2TB / SATA2(3Gb/s) / 5,400RPM / 메모리 32MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+	<hdd>
+		<num>20</num>
+		<name>WD6001FZWX</name>
+		<price>600</price>
+		<company>WD</company>
+		<etc>HDD (PC용) / 6TB / SATA3(6Gb/s) / 7,200RPM / 메모리 128MB / 8.9cm (3.5형)</etc>	
+	</hdd>
+</computer>
