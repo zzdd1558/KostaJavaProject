@@ -9,66 +9,66 @@
    </header>
    <operatesystem>
       <num>01.</num>
-      <name>윈도우 XP ( Windows XP)</name>
+      <name>윈도우 XP</name>
       <price>184,000</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / 클로즈드 소스, 공유소스 / 마이크로소프트 EULA / 하이브리드 커널 / 윈도우 업데이트 / IA-32, x86-64, IA-64 / 처음 사용자용 / 기간없음 / 제한없음 / 선택설치 /</etc>   
+      <etc>운영체제 / 일반 운영체제 / 클로즈드 소스, 공유소스 / 마이크로소프트 EULA / 하이브리드 커널 / 윈도우 업데이트 / IA-32, x86-64, IA-64</etc>   
    </operatesystem>
    
    <operatesystem>
       <num>02.</num>
-      <name>윈도우 비스타 (Windows Vista)</name>
+      <name>윈도우 비스타</name>
       <price>156,000</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / 클로즈드 소스, 공유소스 / 마이크로소프트 EULA / 하이브리드 커널 / 윈도우 업데이트 / IA-32, x86-64, IA-64 / 처음 사용자용 / 기간없음 / 제한없음 / 선택설치 / 윈도우용 / 한글 / 다중 언어팩 / 윈도우 에어로 / 윈도우 셀 / 빠른 검색 / 인터넷 익스플로러7 / 미디어 플레이어 11 / 백업 및 복원센터 / 윈도우 메일 / 윈도우 일정 / 윈도우 사진 갤러리 / 섀도 복사본 / 자녀 보호 / 음성 인식 / 레디부스트 / 레디드라이브 / 슈퍼패치 / IPv6 /</etc>
+      <etc>운영체제 / 일반 운영체제 / 클로즈드 소스, 공유소스 / 마이크로소프트 EULA / 하이브리드 커널 / 윈도우 업데이트 / IA-32, x86-64, IA-64</etc>
    </operatesystem>
    
    <operatesystem>
       <num>03.</num>
-      <name>윈도우 7(Windows 7)</name>
+      <name>윈도우 7</name>
       <price>179,000</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / 처음사용자용 / 기간없음 / 제한없음 / 선택설치 / 윈도우용 / 한글 / 다중 언어팩 / 도메인 가입 / 드라이브 암호화 / 백업 및 복원 / 터치스크린 지원 / 홈 그룹</etc>
+      <etc>운영체제 / 일반 운영체제 / 처음사용자용 / 기간없음 / 제한없음 / 선택설치 / 윈도우용 / 한글</etc>
    </operatesystem>
    
    <operatesystem>
       <num>04.</num>
-      <name>윈도우 8(/windows 8)</name>
+      <name>윈도우 8</name>
       <price>130,000</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / COEM(DSP) / 제한없음 / 64bit / 윈도우용 / 한글 / 도메인 가입 / 멀티터치 지원 / 백업 및 복원 / 스토어 앱 / 클라우드 서비스 / 터치스크린 지원 / 홈 그룹</etc>
+      <etc>운영체제 / 일반 운영체제 / COEM(DSP) / 제한없음 / 64bit / 윈도우용 / 한글 / 도메인 가입</etc>
    </operatesystem>
    
    <operatesystem>
       <num>05.</num>
-      <name>윈도우 8.1 PRO(Windows 8.1 Pro)</name>
+      <name>윈도우 8.1 PRO</name>
       <price>207,000</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / 라이센스 / 기간없음 / 사무용 / 선택설치 / 한글 / 다중 언어팩 / 도메인 가입 / 드라이브 암호화 / 멀티터치 지원 / 백업 및 복원 / 스마트 검색 / 클라우드 서비스 / 터치스크린 지원 / 홈 그룹</etc>
+      <etc>운영체제 / 일반 운영체제 / 라이센스 / 기간없음 / 사무용 / 선택설치 / 한글 / 다중 언어팩</etc>
    </operatesystem>
    
    <operatesystem>
       <num>06.</num>
-      <name>윈도우 8.1(Windows 8.1)</name>
+      <name>윈도우 8.1</name>
       <price>249,000</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / ESD / 교육기관용 / 선택설치 / 도메인 가입 / 멀티터치 지원 / 백업 및 복원 / 스마트 검색 / 클라우드 서비스 / 터치스크린 지원 / 홈 그룹</etc>
+      <etc>운영체제 / 일반 운영체제 / ESD / 교육기관용 / 선택설치 / 도메인 가입 / 멀티터치 지원</etc>
    </operatesystem>
    
    <operatesystem>
       <num>07.</num>
-      <name>윈도우 10 PRO(Windows 10 Pro)</name>
+      <name>윈도우 10 PRO</name>
       <price>164,000</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / COEM(DSP) / 기간없음 / 제한없음 / 64bit / 한글 / 다중 언어팩 / 도메인 가입 / 드라이브 암호화 / 멀티터치 지원 / 백업 및 복원 / 스마트 검색 / 음성비서 기능 / 클라우드 서비스 / 터치스크린 지원 / 홈 그룹 / 생체인식 시스템 / 가상 데스크톱 / 메트로 UI / 게임 스트리밍 지원</etc>
+      <etc>운영체제 / 일반 운영체제 / COEM(DSP) / 기간없음 / 제한없음 / 64bit / 한글</etc>
    </operatesystem>
    
    <operatesystem>
       <num>08.</num>
-      <name>윈도우 10 Home(Windows 10 Home)</name>
+      <name>윈도우 10 Home</name>
       <price>143,800</price>
       <company>Microsoft</company>
-      <etc>운영체제 / 일반 운영체제 / 처음사용자용 / 기간없음 / 제한없음 / 한글 / 도메인 가입 / 멀티터치 지원 / 백업 및 복원 / 스마트 검색 / 음성비서 기능 / 클라우드 서비스 / 터치스크린 지원 / 홈 그룹 / 생체인식 시스템 / 가상 데스크톱 / 메트로 UI / 게임 스트리밍 지원 / USB 설치방식</etc>
+      <etc>운영체제 / 일반 운영체제 / 처음사용자용 / 기간없음 / 제한없음 / 한글 / 도메인 가입</etc>
    </operatesystem>
       
    <operatesystem>
@@ -76,7 +76,7 @@
       <name>CentOS</name>
       <price>12,000</price>
       <company>CentOS</company>
-      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / Yum / up2date 지원 / RPM 패키지 매니저 / i386,x86-64 / 모놀리식 커널 / GNOME / http://www.centos.org/</etc>
+      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / Yum / up2date 지원 / RPM 패키지 매니저</etc>
    </operatesystem>
    
    <operatesystem>
@@ -84,7 +84,7 @@
       <name>Fedora</name>
       <price>43,000</price>
       <company>Fedora</company>
-      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / DNF / RPM 패키지 매니저 / x86, x86-64, 파워피씨, ARM, s390x / 모노리식 커널 / 그놈 3 / getfedora.org</etc>
+      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / DNF / RPM 패키지 매니저</etc>
    </operatesystem>
    
    <operatesystem>
@@ -92,7 +92,7 @@
       <name>Ubuntu</name>
       <price>52,000</price>
       <company>Ubuntu</company>
-      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / 어드밴스트 패키징 툴(APT) / dpkg / x86-64, ARM / 모노리딕 커널 / 유니티 / 여러가지 / www.ubuntu.com</etc>
+      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / 어드밴스트 패키징 툴(APT) / dpkg</etc>
    </operatesystem>
    
    <operatesystem>
@@ -100,7 +100,7 @@
       <name>Linux Mint</name>
       <price>42,000</price>
       <company>Linux Mint</company>
-      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / 어드밴스트 패키징 툴(APT) / ㅇ뜌 / i386,AMD64 / 모노리딕 커널 / 시나몬,MATE,KDE,Xfce / GPL / www.linuxmint.com</etc>
+      <etc>운영체제 / 리눅스 / 오픈 소스 소프트웨어 / 어드밴스트 패키징 툴(APT)</etc>
    </operatesystem>
       
    <operatesystem>
@@ -108,39 +108,39 @@
       <name>Debian</name>
       <price>83,000</price>
       <company>Debian</company>
-      <etc>운영체제 / 유닉스계열,GNU / 오픈 소스 소프트웨어 / 어드밴스트 패키징 툴(APT) / dpkg / i386(x86), amd64(x86-64), PowerPC, SPARC, DEC Alpha, ARM, MIPS, HPPA, S390, IA-64 / 모노리식 커널 (리눅스, FreeBSD), 마이크로 (Hurd) / 그놈, KDE, Xfce, LXDE / GNU GPL 및 기타 라이선스 / www.debian.org</etc>
+      <etc>운영체제 / 유닉스계열,GNU / 오픈 소스 소프트웨어 / 어드밴스트 패키징 툴(APT)</etc>
    </operatesystem>
    
    <operatesystem>
       <num>14.</num>
-      <name>OS X 10.10 요세미티 (Yosemite)</name>
+      <name>10.10 요세미티</name>
       <price>487,000</price>
       <company>Apple</company>
-      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈드 소스 (오픈 소스 구성 요소 포함) / 맥 앱 스토어 / IA-32, x86-64, PowerPC (32비트 & 64비트) / 마하 커널 기반 하이브리드식 커널 / 아쿠아 / 사유 EULA / 다크 모드(Dark Mode) / www.apple.com</etc>
+      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈드 소스 (오픈 소스 구성 요소 포함) / 맥 앱 스토어</etc>
    </operatesystem>
    
    <operatesystem>
       <num>15.</num>
-      <name>OS X 10.11 엘카피탠 (El Capitan)</name>
+      <name>10.11 엘카피탠</name>
       <price>487,000</price>
       <company>Apple</company>
-      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈스 소스 ( 오픈 소스 구성 요소 포함) / 맥 앱 스토어 / IA-32, x86-64, PowerPC (32비트 & 64비트) / 마하 커널 기반 하이브리드식 커널 / 아쿠아 / 사유 EULA / 스크린 스플릿 / 시스템 폰트 / www.apple.com</etc>
+      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈스 소스 ( 오픈 소스 구성 요소 포함) / 맥 앱 스토어</etc>
    </operatesystem>
    
    <operatesystem>
       <num>16.</num>
-      <name>OS X 10.12 시에라 (Sierra)</name>
+      <name>10.12 시에라</name>
       <price>487,000</price>
       <company>Apple</company>
-      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈스 소스 ( 오픈 소스 구성 요소 포함) / 맥 앱 스토어,애플 베타 프로그램 / IA-32, x86-64, PowerPC (32비트 & 64비트) / 마하 커널 기반 하이브리드식 커널 / 아쿠아 / 사유 EULA / 시리 / IOS, watchOS 연동 / www.apple.com</etc>
+      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈스 소스 ( 오픈 소스 구성 요소 포함) / 맥 앱 스토어,애플 베타 프로그램</etc>
    </operatesystem>
    
    <operatesystem>
       <num>17.</num>
-      <name>OS X 10.13 하이 시에라 (High Sierra)</name>
+      <name>10.13 하이 시에라</name>
       <price>487,000</price>
       <company>Apple</company>
-      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈스 소스 ( 오픈 소스 구성 요소 포함) / 맥 앱 스토어,애플 베타 프로그램 / IA-32, x86-64, PowerPC (32비트 & 64비트) / 마하 커널 기반 하이브리드식 커널 / 아쿠아 / 사유 EULA / APFS / 메탈2 / 고효율 비디오 코딩 / IOS, watchOS 연동 / www.apple.com</etc>
+      <etc>운영체제 / 맥OS 유닉스 계열 / 클로즈스 소스 ( 오픈 소스 구성 요소 포함) / 맥 앱 스토어,애플 베타 프로그램</etc>
    </operatesystem>
    
    <operatesystem>
@@ -148,7 +148,7 @@
       <name>크롬 OS</name>
       <price>46,000</price>
       <company>Google</company>
-      <etc>운영체제 / 크로미움 OS(젠투 리눅스 기반) / C, C++ / 롤링 릴리즈 / 포티지 / x86, 32비트 ARM (ARMv7) / 모놀리딕 (리눅스) / 구글 크롬 브라우저 기반 그래픽 인터페이스 / 구글 크롬 OS 서비스 조항 / google.com/intl/ko/chrome</etc>
+      <etc>운영체제 / 크로미움 OS(젠투 리눅스 기반) / C, C++ / 롤링 릴리즈 / 포티지 / x86, 32비트 ARM (ARMv7)</etc>
    </operatesystem>
       
    <operatesystem>
@@ -164,7 +164,7 @@
       <name>안드로이드 OS</name>
       <price>432,000</price>
       <company>Google</company>
-      <etc>운영체제 / 유닉스 계열, 리눅스 / 오픈 소스 소프트웨어 / C, C++, 파이썬, 자바 / 구글 플레이, APK / ARM 아키텍처, MIPS 아키텍처, x86 / 리눅스 커널 (모노리식 커널) / 그래픽 사용자 인터페이스 (멀티터치) / 아파치 2.0, GPL v2 / android.com</etc>
+      <etc>운영체제 / 유닉스 계열, 리눅스 / 오픈 소스 소프트웨어 / C, C++, 파이썬, 자바 / 구글 플레이, APK</etc>
    </operatesystem>
       
 </computer>
