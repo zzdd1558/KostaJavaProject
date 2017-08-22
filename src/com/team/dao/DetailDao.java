@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-package com.team.dao;
-
-public class DetailDao {
-
-}
-=======
 package com.team.dao;
 
 import java.sql.Connection;
@@ -70,4 +63,3 @@ public class DetailDao {
 	}//end of deleteAll
 	
 }//end of DetailDao
->>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject
