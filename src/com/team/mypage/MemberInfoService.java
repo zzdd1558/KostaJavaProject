@@ -1,11 +1,9 @@
 package com.team.mypage;
 
-import java.util.List;
 import java.util.Scanner;
 
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
-import com.team.test.Test;
 import com.team.util.Service;
 
 public class MemberInfoService implements Service {
@@ -14,12 +12,14 @@ public class MemberInfoService implements Service {
 	public void exec(Scanner scan,String id) {
 		// TODO Auto-generated method stub
 		// 기존 회원정보 출력
-		MemberDao member = new MemberDao();
-
-		List<MemberDTO> list = member.memberList();
-
-		for (MemberDTO temp : list) {
-			System.out.println(temp);
+		MemberDTO member = MemberDao.searchMember(id);
+		
+		if(member != null)
+			System.out.println(member.toString());
+		//member 정보를 찾지 못 했을 시
+		else {
+			System.out.println("찾을 수 없는 정보 입니다.");
+			return;
 		}
 
 		// 회원정보 수정
@@ -50,7 +50,7 @@ public class MemberInfoService implements Service {
 
 		String content = scan.next();
 
-		if (member.updateMember(Test.userId, content, update) != 0)
+		if (MemberDao.updateMember(id, content, update) != 0)
 			System.out.println("성공입니다.");
 		else
 			System.out.println("실패입니다.");
