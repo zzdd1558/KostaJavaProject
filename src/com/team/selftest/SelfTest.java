@@ -8,15 +8,17 @@ import com.team.dao.ItemDao;
 import com.team.dao.MemberDao;
 import com.team.dto.ItemDTO;
 import com.team.dto.MemberDTO;
+import com.team.join.Login;
 
 public class SelfTest {
 	
 	public static void main(String[] args) {
 		
 //		MemberTest();
-		AddData.initiate();
-//		new Login().start();
-		ItemTest();
+//		AddData.initiate();
+		
+		new Login().start();
+//		ItemTest();
 		
 	}//end of main
 	

@@ -3,6 +3,8 @@ package com.team.join;
 import java.util.Scanner;
 
 import com.team.dao.AddData;
+import com.team.dao.MemberDao;
+import com.team.dto.MemberDTO;
 
 public class Login {
 
@@ -11,7 +13,9 @@ public class Login {
 
 		Scanner scan = new Scanner(System.in);
 		AddData.initiate();
+		MemberDao.add(new MemberDTO("scott","tiger","�뒪罹�","90000","scott.com","�꽌�슱","01022445555"));
 
+		
 		while (true) {
 			
 			System.out.println("기능을 선택하세요");

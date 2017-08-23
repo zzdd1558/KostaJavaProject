@@ -46,7 +46,6 @@ public class EventDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		
-		
 		try {
 			
 			c = DBUtil.getConnection();

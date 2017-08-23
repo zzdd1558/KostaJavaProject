@@ -82,7 +82,7 @@ public class MemberDao {
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
 		int result = 0;
-		sql = "update table member set " + update + " = ? " + " where id = ?";
+		sql = "update member set " + update + " = ? " + " where id = ?";
 		try {
 
 			pstmt = con.prepareStatement(sql);

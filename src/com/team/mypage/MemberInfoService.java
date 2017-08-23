@@ -4,19 +4,20 @@ import java.util.Scanner;
 
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
+import com.team.main.MainInfoService;
 import com.team.util.Service;
 
 public class MemberInfoService implements Service {
 
 	@Override
-	public void exec(Scanner scan,String id) {
+	public void exec(Scanner scan, String id) {
 		// TODO Auto-generated method stub
 		// 기존 회원정보 출력
 		MemberDTO member = MemberDao.searchMember(id);
-		
-		if(member != null)
+
+		if (member != null)
 			System.out.println(member.toString());
-		//member 정보를 찾지 못 했을 시
+		// member 정보를 찾지 못 했을 시
 		else {
 			System.out.println("찾을 수 없는 정보 입니다.");
 			return;
@@ -54,6 +55,8 @@ public class MemberInfoService implements Service {
 			System.out.println("성공입니다.");
 		else
 			System.out.println("실패입니다.");
+
+		new MainInfoService().exec(scan, id);
 
 	}
 
