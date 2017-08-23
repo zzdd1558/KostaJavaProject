@@ -122,7 +122,7 @@ public class ItemDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		sql = "select * from items i, itemlist l where i.code = l.code and l.kind = ?"
+		sql = "select * from items i, itemlist l where i.code = l.code and LOWER(l.kind) = LOWER(?)"
 				+ " order by item_num";
 
 		try {
@@ -200,10 +200,9 @@ public class ItemDao {
 
 	/** 이름으로 부품 검색 */
 	public static List<ItemDTO> searchForPartsByName(String name) {
-		
+
 		List<ItemDTO> list = null;
-		sql = "select * from items i, itemlist il where i.code = il.code and item_name = ?"
-				+ " order by item_num";
+		sql = "select * from items i, itemlist il where i.code = il.code and lower(item_name) = lower(?)" + " order by item_num";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -238,15 +237,14 @@ public class ItemDao {
 		}
 
 		return list;
-		
+
 	} // end of searchForpartsByPrice
 
 	/** 제조사로 부품 검색 */
 	public static List<ItemDTO> searchForPartsByCompany(String company) {
-		
+
 		List<ItemDTO> list = null;
-		sql = "select * from items i, itemlist il where i.code = il.code and company = ?"
-				+ " order by item_num";
+		sql = "select * from items i, itemlist il where i.code = il.code and company = ?" + " order by item_num";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -281,7 +279,48 @@ public class ItemDao {
 		}
 
 		return list;
-		
+
 	} // end of searchForpartsByPrice
 
+	public List<ItemDTO> partsConfirm(String partsName) {
+		// TODO Auto-generated method stub
+		List<ItemDTO> list = null;
+		sql = "SELECT * FROM items i INNER JOIN itemlist il ON i.code = il.code WHERE LOWER(il.kind) = LOWER(?) ";
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+
+			// DB Connection과 쿼리문 생성 및 실행
+			list = new ArrayList<>();
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, partsName);
+			rs = ps.executeQuery();
+
+			// ResultSet에 담겨있는 정보 배열에 저장
+			while (rs.next()) {
+
+				int num = rs.getInt("item_num");
+				String cpmpany = rs.getString("company");
+				String code = rs.getString("code");
+				String etc = rs.getString("etc");
+				String price = rs.getString("price");
+				String name = rs.getString("item_name");
+				
+				list.add(new ItemDTO(num, cpmpany, name, etc, price, code));
+				list.get(list.size() - 1).setListName(rs.getString("kind"));
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+
+		return list;
+
+	} // end of partsConfirm
 }// end of ItemDao

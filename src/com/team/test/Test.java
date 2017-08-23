@@ -6,11 +6,10 @@ import com.team.cart.CartInfoService;
 import com.team.dao.AddData;
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
-import com.team.join.JoinService;
-import com.team.join.LoginService;
 import com.team.main.MainInfoService;
 import com.team.mypage.MemberInfoService;
 import com.team.order.OrdersInfoService;
+import com.team.searchParts.SearchPartsService;
 import com.team.util.Service;
 
 /** Test를 위한 클래스 */
@@ -57,7 +56,8 @@ public class Test {
 
 			// 3 윤진
 			case 3:
-
+				service = new SearchPartsService();
+				service.exec(scan, id);
 				break;
 
 			// 4,5 대호

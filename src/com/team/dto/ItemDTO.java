@@ -84,8 +84,8 @@ public class ItemDTO {
 
 	@Override
 	public String toString() {
-		return "ItemDTO [itemNum=" + itemNum + ", company=" + company + ", itemName=" + itemName + ", etc=" + etc
-				+ ", price=" + price + ", code=" + code + ", listName=" + listName + "]";
+		return  "[부품 종류] : " + listName + ", [부품번호] : " + itemNum + ", [제조사] : " + company + ", [부품 이름] : "  + itemName + ", [상세정보] : " + etc
+				+ ", [가격] : " + price;
 	}
 	
 	
