@@ -22,7 +22,9 @@ public class SelfTest {
 	
 	private static void ItemTest() {
 		
-		List <ItemDTO> list = ItemDao.getPartName("NCORE 볼트론");
+		List <ItemDTO> list = 
+//				ItemDao.getPartName("NCORE 볼트론");
+				ItemDao.searchForPartsByPrice("40000", "50000");
 		
 		for(ItemDTO it: list)
 			System.out.println(it.toString());

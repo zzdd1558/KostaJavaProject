@@ -157,8 +157,45 @@ public class ItemDao {
 	}
 	
 	/** 가격으로 부품 검색 */
-	public void searchForPartsByPrice() {
+	public static List<ItemDTO> searchForPartsByPrice(String min, String max) {
 
+		List<ItemDTO> list = null;
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		sql = "select * from items i, itemlist l where i.code = l.code and price>= ? and price <= ?"
+				+ " order by item_num";
+		
+		try {
+			list = new ArrayList<>();
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, min);
+			ps.setString(2, max);
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				
+				int num = rs.getInt("item_num");
+				String name = rs.getString("item_name");
+				String code = rs.getString("code");
+				String etc = rs.getString("etc");
+				String price = rs.getString("price");
+				String company = rs.getString("company");
+
+				list.add(new ItemDTO(num, company, name, etc, price, code));
+				list.get(list.size()-1).setListName(rs.getString("kind"));
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+		
+		return list;
 	} // end of searchForpartsByPrice
 
 	/** 이름으로 부품 검색 */
