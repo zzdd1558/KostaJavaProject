@@ -14,7 +14,7 @@ public class DBUtil {
 	/* 변수 */
 
 	private static final String DRIVER_NAME = "oracle.jdbc.driver.OracleDriver";
-	private static final String CONNECTION_INFO = "jdbc:oracle:thin:@localhost:1521:orcl";
+	private static final String CONNECTION_INFO = "jdbc:oracle:thin:@localhost:1521:XE";
 	private static final String CONNECTION_USER = "asdf";
 	private static final String CONNECTION_PASSWORD = "1234";
 
@@ -30,19 +30,8 @@ public class DBUtil {
 		}
 	}
 
-	/** DB Connection을 가져오는 함수 *//*
-									 * public static Connection getConnection()
-									 * { // TODO Auto-generated method stub try
-									 * { System.out.println(con); if (con ==
-									 * null) { con =
-									 * DriverManager.getConnection(
-									 * CONNECTION_INFO, CONNECTION_USER,
-									 * CONNECTION_PASSWORD); } } catch
-									 * (SQLException e) { // TODO Auto-generated
-									 * catch block e.printStackTrace(); } return
-									 * con; }// end of getConnection
-									 */
-
+	/** DB Connection을 가져오는 함수 */
+	
 	public static Connection getConnection() {
 		// TODO Auto-generated method stub
 		Connection con = null;

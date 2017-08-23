@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.team.dto.ItemDTO;
@@ -114,9 +115,46 @@ public class ItemDao {
 
 	}// end of getItemByNum
 
-	/** */
-	public void getPartName(){
+	/** 부품 이름을 통해 부품 목록 가져오는 함수 */
+	public static List<ItemDTO> getPartName(String name){
 		
+		List<ItemDTO> list = null;
+		sql = "select * from items i, itemlist il where i.code = il.code and item_name = ?";
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+
+			// DB Connection과 쿼리문 생성 및 실행
+			list = new ArrayList<>();
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, name);
+			rs = ps.executeQuery();
+
+			// ResultSet에 담겨있는 정보 저장
+			while (rs.next()) {
+
+				int num = rs.getInt("item_num");
+				String code = rs.getString("code");
+				String etc = rs.getString("etc");
+				String price = rs.getString("price");
+				String company = rs.getString("company");
+
+				list.add(new ItemDTO(num, company, name, etc, price, code));
+				list.get(list.size()-1).setListName(rs.getString("kind"));
+				
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+
+		return list;
 	}
 	
 	
