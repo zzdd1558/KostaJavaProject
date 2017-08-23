@@ -13,7 +13,7 @@ import com.team.util.Service;
 public class CartInfo implements Service {
 
 	@Override
-	public void exec(Scanner scan) {
+	public void exec(Scanner scan,String id) {
 		// TODO Auto-generated method stub
 
 		// Search(구매하려고 담은 목록) 보여주기.
@@ -49,9 +49,9 @@ public class CartInfo implements Service {
 			Map<Integer, String> map1 = new HashMap<>();
 
 			String s = null;
-			for (ItemDTO id : list) {
-				if (id.getItemNum() == i) {
-					s = id.getItemName();
+			for (ItemDTO it : list) {
+				if (it.getItemNum() == i) {
+					s = it.getItemName();
 				}
 			}
 

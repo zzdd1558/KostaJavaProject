@@ -9,7 +9,7 @@ public class SearchOfNameService implements Service{
 
 	/** 이름으로 부품 검색  */
 	@Override
-	public void exec(Scanner scan) {
+	public void exec(Scanner scan,String id) {
 		// TODO Auto-generated method stub
 		ItemDao item = new ItemDao();
 		System.out.println(" --------------- 부품 종류 ---------------");

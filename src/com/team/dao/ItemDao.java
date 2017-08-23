@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 import com.team.dto.ItemDTO;
 import com.team.util.DBUtil;
@@ -16,7 +17,7 @@ public class ItemDao {
 
 	/* 함수 */
 	/** 부품을 추가하는 함수 */
-	public static int add(ItemDTO item) {
+	public static int add(List<ItemDTO> items) {
 
 		int result = 0; // 성공 여부를 저장할 변수
 		Connection c = null;
@@ -26,15 +27,17 @@ public class ItemDao {
 		try {
 			// DB Connection을 생성하고 쿼리문 생성
 			c = DBUtil.getConnection();
-			ps = c.prepareStatement(sql);
-			ps.setString(1, item.getCompany());
-			ps.setString(2, item.getItemName());
-			ps.setString(3, item.getEtc());
-			ps.setString(4, item.getPrice());
-			ps.setString(5, item.getCode());
+			for (ItemDTO item : items) {
+				ps = c.prepareStatement(sql);
+				ps.setString(1, item.getCompany());
+				ps.setString(2, item.getItemName());
+				ps.setString(3, item.getEtc());
+				ps.setString(4, item.getPrice());
+				ps.setString(5, item.getCode());
 
-			// 쿼리문을 실행하고 그 결과를 저장
-			result = ps.executeUpdate();
+				// 쿼리문을 실행하고 그 결과를 저장
+				result = ps.executeUpdate();
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

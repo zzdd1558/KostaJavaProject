@@ -74,37 +74,9 @@ public class MemberDao {
 
 	}// end of deleteAll
 
-	// 멤버 리스트 출력
-	public List<MemberDTO> memberList() {
-		Connection con = DBUtil.getConnection();
-		String sql = "select * from userInfo where id = ?";
-		List<MemberDTO> list = new ArrayList<>();
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-
-		try {
-			pstmt = con.prepareStatement(sql);
-
-			pstmt.setString(1, Test.userId);
-
-			rs = pstmt.executeQuery();
-
-			while (rs.next()) {
-				list.add(new MemberDTO(rs.getString("id"), rs.getString("name"), rs.getString("mail"),
-						rs.getString("addr"), rs.getString("phone")));
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			DBUtil.close(con, pstmt, rs);
-		}
-		return list;
-	} // end of memberList
-
 	/** 회원(Member) 레코드의 내용을 변경하는 함수 */
 	// 내용 변경 (기준 id, 변경 내용, 바꿀 항목)
-	public int updateMember(String id, String content, String update) {
+	public static int updateMember(String id, String content, String update) {
 
 		// DB Connection 및 쿼리문 생성
 		Connection con = DBUtil.getConnection();
@@ -154,6 +126,7 @@ public class MemberDao {
 				m.setPwd(rs.getString("pwd"));
 				m.setMail(rs.getString("mail"));
 				m.setPhone(rs.getString("phone"));
+				m.setName(rs.getString("name"));
 
 				// 비밀번호가 일치하지 않으면 null 대입
 				if (!pwd.equals(rs.getString("pwd")))
@@ -203,5 +176,45 @@ public class MemberDao {
 		return exist;
 		
 	}//end of checkId
+	
+	/** 아이디와 일치하는 회원 정보 가져오기 */
+	public static MemberDTO searchMember(String id) {
+		
+		MemberDTO m = null;
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		sql = "select * from member where id = ?";
+		
+		try {
+			
+			//DBConnection, 쿼리문 생성 및 실행
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, id);
+			rs = ps.executeQuery();
+			
+			//아이디와 일치하는 맴버가 존재한다면 객체 생성
+			if(rs.next()) {
+				m = new MemberDTO();
+				m.setId(id);
+				m.setAddr(rs.getString("addr"));
+				m.setBirth(rs.getString("birth"));
+				m.setPwd(rs.getString("pwd"));
+				m.setMail(rs.getString("mail"));
+				m.setPhone(rs.getString("phone"));
+				m.setName(rs.getString("name"));
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+		
+		return m;
+		
+	}//end of searchMember
 
 } // end of class

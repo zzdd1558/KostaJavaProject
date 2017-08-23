@@ -11,7 +11,7 @@ import com.team.util.Service;
 public class OrdersInfoService implements Service {
 
 	@Override
-	public void exec(Scanner scan) {
+	public void exec(Scanner scan,String id) {
 		// TODO Auto-generated method stub
 		OrdersDTO odto = new OrdersDTO();
 

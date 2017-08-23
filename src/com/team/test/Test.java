@@ -2,8 +2,10 @@ package com.team.test;
 
 import java.util.Scanner;
 
+import com.team.dao.AddData;
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
+import com.team.join.JoinService;
 import com.team.join.LoginService;
 import com.team.mypage.MemberInfoService;
 import com.team.order.OrdersInfoService;
@@ -18,7 +20,9 @@ public class Test {
 
 	public static void main(String[] args) {
 		MemberTest();
-
+		String id = null;
+		AddData.initiate();
+		
 		Scanner scan = new Scanner(System.in);
 		boolean check = true;
 		Service service = null;
@@ -45,10 +49,8 @@ public class Test {
 
 			// 1, 2 창욱
 			case 1:
-
 				break;
 			case 2:
-
 				break;
 
 			// 3 윤진
@@ -67,11 +69,11 @@ public class Test {
 			// 6,7 정규
 			case 6:
 				service = new OrdersInfoService();
-				service.exec(scan);
+				service.exec(scan,id);
 				break;
 			case 7:
 				service = new MemberInfoService();
-				service.exec(scan);
+				service.exec(scan,id);
 				break;
 
 			case 8:
@@ -99,7 +101,6 @@ public class Test {
 		MemberDao.add(new MemberDTO("changuk", "test", "창욱", "120002", "changuk.com", "울산", "0103910395"));
 		MemberDao.add(new MemberDTO("test", "1234", "테스트", "903020", "test.com", "부산", "01022224242"));
 
-		new LoginService().exec(sc);
 	}// end of MemberTest
 
 }// end of Test

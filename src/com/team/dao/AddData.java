@@ -2,6 +2,7 @@ package com.team.dao;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,20 +22,19 @@ public class AddData {
 
 	/* 변수 */
 	static List<String> list; // 파일 명들을 저장할 변수
-//
+	//
 	/* 생성자 */
-	static{
+	static {
 
 		// 파일 명들을 리스트에 저장
-		list = Arrays.asList("Case", "CPU", "HDD", "MainBoard", "ODD", "OperatingSystem",
-				"power", "Ram", "ssd", "vga");
+		list = Arrays.asList("Case", "CPU", "HDD", "MainBoard", "ODD", "OperatingSystem", "power", "Ram", "ssd", "vga");
 
 	}
 
 	/* 함수 */
 	/** 테이블 데이터를 초기화 */
 	public static void initiate() {
-		
+
 		// 모든 데이터 삭제 primary key 를 포함하는 순서로 제거
 		EventDao.deleteAll();
 		SequenceDao.deleteAll();
@@ -47,24 +47,24 @@ public class AddData {
 		SequenceDao.add();
 		addItemListData();
 		addItemData();
-		
+
 	}// end of Initiate
-	
-	/** itemlist 데이터를 DB에 저장*/
+
+	/** itemlist 데이터를 DB에 저장 */
 	private static void addItemListData() {
-		
+
 		int result = 0;
-		for(String s:list) {
+		for (String s : list) {
 			System.out.println(s);
-			result = ItemListDao.add(new ItemListDTO(list.indexOf(s)+"",s.toLowerCase()));
-			
-			if(result == 0) {
+			result = ItemListDao.add(new ItemListDTO(list.indexOf(s) + "", s.toLowerCase()));
+
+			if (result == 0) {
 				System.out.println("실패했습니다.");
 				break;
 			}
 		}
-		
-	}//end of addItemListData
+
+	}// end of addItemListData
 
 	/** 파싱 후 데이터를 DB에 저장 */
 	private static void addItemData() {
@@ -77,11 +77,13 @@ public class AddData {
 			// DocumentBuilder 생성
 			DocumentBuilder builder = factory.newDocumentBuilder();
 
+			List<ItemDTO> items = new ArrayList<>();
+
 			// xml을 파싱 ( 문서 내부의 데이터 가져오기 - 메모리에 문서 트리 구축 )
-			for (String s : list) { 
+			for (String s : list) {
 
 				// 리스트 순서대로 하나씩 파싱
-				Document document = builder.parse(new FileInputStream(s+".xml"));
+				Document document = builder.parse(new FileInputStream(s + ".xml"));
 
 				// 태그 별로 노드 리스트 만들기
 				NodeList names = document.getElementsByTagName("name");
@@ -98,9 +100,10 @@ public class AddData {
 					String etc = etcs.item(i).getTextContent();
 
 					// 부품 코드
-					// 0.Case 1.CPU 2.HDD 3.MainBoard 4.ODD 5.OperatingSystem 6.Power 7.Ram 8.ssd
+					// 0.Case 1.CPU 2.HDD 3.MainBoard 4.ODD 5.OperatingSystem
+					// 6.Power 7.Ram 8.ssd
 					// 9.vga
-					result = ItemDao.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s)+""));
+					items.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s) + ""));
 
 					// 결과 확인
 
@@ -108,16 +111,19 @@ public class AddData {
 					if (result == 0) {
 						System.out.println("실패했습니다.1");
 						break;
-					}
-				}
+					} // end of if
+				} // end of for
+				
+				ItemDao.add(items);
 
 			} // end of for
+			
+		} catch (ParserConfigurationException | SAXException |
 
-		} catch (ParserConfigurationException | SAXException | IOException e) {
+				IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 	}// end of addItemData
 }// end of AddData
-

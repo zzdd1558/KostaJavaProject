@@ -10,7 +10,7 @@ import com.team.util.Service;
 public class JoinService implements Service {
 
 	@Override
-	public void exec(Scanner scan) {
+	public void exec(Scanner scan,String id) {
 
 		MemberDTO m = new MemberDTO();
 		

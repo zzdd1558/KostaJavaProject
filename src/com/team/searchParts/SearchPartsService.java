@@ -7,7 +7,7 @@ import com.team.util.Service;
 public class SearchPartsService implements Service {
 
 	@Override
-	public void exec(Scanner scan) {
+	public void exec(Scanner scan , String id) {
 		// TODO Auto-generated method stub
 		Service service = null;
 		System.out.println("1. 가격으로 검색 ");
@@ -21,15 +21,15 @@ public class SearchPartsService implements Service {
 		switch (select) {
 		case 1:
 			service = new SearchOfPriceService();
-			service.exec(scan);
+			service.exec(scan,id);
 			break;
 		case 2:
 			service = new SearchOfCompanyService();
-			service.exec(scan);
+			service.exec(scan,id);
 			break;
 		case 3:
 			service = new SearchOfNameService();
-			service.exec(scan);
+			service.exec(scan,id);
 			break;
 
 		default:
