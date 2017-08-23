@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import com.team.dao.ItemDao;
 import com.team.dto.ItemDTO;
+import com.team.order.OrdersInfoService;
 import com.team.util.Service;
 
 public class CartInfoService implements Service {
@@ -36,8 +37,8 @@ public class CartInfoService implements Service {
 		
 		switch (key) {
 		case 1:
-			//service = new OrdersInfoService();
-			
+			service = new OrdersInfoService();
+			service.exec(scan, id);
 			break;
 			
 		case 2:

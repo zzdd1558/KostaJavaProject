@@ -2,11 +2,13 @@ package com.team.test;
 
 import java.util.Scanner;
 
+import com.team.cart.CartInfoService;
 import com.team.dao.AddData;
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
 import com.team.join.JoinService;
 import com.team.join.LoginService;
+import com.team.main.MainInfoService;
 import com.team.mypage.MemberInfoService;
 import com.team.order.OrdersInfoService;
 import com.team.util.Service;
@@ -60,10 +62,12 @@ public class Test {
 
 			// 4,5 대호
 			case 4:
-
+				service = new CartInfoService();
+				service.exec(scan, id);
 				break;
 			case 5:
-
+				service = new MainInfoService();
+				service.exec(scan, id);
 				break;
 
 			// 6,7 정규
