@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
+import com.team.join.JoinService;
 import com.team.join.LoginService;
 import com.team.mypage.MemberInfoService;
 import com.team.order.OrdersInfoService;
@@ -45,10 +46,10 @@ public class Test {
 
 			// 1, 2 창욱
 			case 1:
-
+				new LoginService().login(scan);
 				break;
 			case 2:
-
+				new JoinService().exec(scan);
 				break;
 
 			// 3 윤진
