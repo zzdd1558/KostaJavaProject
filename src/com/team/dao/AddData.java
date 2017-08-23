@@ -2,6 +2,7 @@ package com.team.dao;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -80,6 +81,8 @@ public class AddData {
 			// DocumentBuilder 생성
 			DocumentBuilder builder = factory.newDocumentBuilder();
 
+			List<ItemDTO> items = new ArrayList<>();
+			
 			// xml을 파싱 ( 문서 내부의 데이터 가져오기 - 메모리에 문서 트리 구축 )
 			for (String s : list) { 
 
@@ -103,16 +106,12 @@ public class AddData {
 					// 부품 코드
 					// 0.Case 1.CPU 2.HDD 3.MainBoard 4.ODD 5.OperatingSystem 6.Power 7.Ram 8.ssd
 					// 9.vga
-					result = ItemDao.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s)+""));
+					items.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s)+""));
 
-					// 결과 확인
-
-					// 0이면 추가 실패.
-					if (result == 0) {
-						System.out.println("실패했습니다.");
-						break;
-					}
-				}
+					
+				}//end of for
+				
+				ItemDao.add(items);
 
 			} // end of for
 
