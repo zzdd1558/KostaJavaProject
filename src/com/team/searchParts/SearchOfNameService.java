@@ -26,7 +26,7 @@ public class SearchOfNameService implements Service{
 		System.out.println(" ----------------------------------------- ");
 		System.out.print(" 입력 : ");
 		String partsName = scan.nextLine();
-		item.searchForPartsByName();
+		item.searchForPartsByName(partsName);
 		
 	} // end of exec
 } // end of SearchOfNameService
