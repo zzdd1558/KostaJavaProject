@@ -20,7 +20,7 @@ public class ComDBManager {
 		case 2:
 		//cart 페이지 호출
 		CartInfo ci = new CartInfo();
-		ci.exec(scan);
+		ci.exec(scan,null);
 		break;
 		
 		case 3:

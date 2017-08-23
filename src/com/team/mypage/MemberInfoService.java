@@ -11,7 +11,7 @@ import com.team.util.Service;
 public class MemberInfoService implements Service {
 
 	@Override
-	public void exec(Scanner scan) {
+	public void exec(Scanner scan,String id) {
 		// TODO Auto-generated method stub
 		// 기존 회원정보 출력
 		MemberDao member = new MemberDao();

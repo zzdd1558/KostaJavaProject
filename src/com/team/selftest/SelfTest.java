@@ -5,17 +5,26 @@ import java.util.Scanner;
 import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
 import com.team.join.JoinService;
+import com.team.join.Login;
 
 public class SelfTest {
 	
 	public static void main(String[] args) {
 		
-		MemberTest();
+//		MemberTest();
 //		AddData.initiate();
+		new Login().start();
+		
 		
 	}//end of main
 	
-	public static void MemberTest() {
+	private static void OrderTest() {
+		
+		
+		
+	}//end of OrderTest
+	
+	private static void MemberTest() {
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -27,7 +36,7 @@ public class SelfTest {
 		MemberDao.add(new MemberDTO("test","1234","�뀒�뒪�듃","903020","test.com","遺��궛","01022224242"));
 		
 //		new LoginService().login(sc);
-		new JoinService().exec(sc);
+//		new JoinService().exec(sc);
 		
 	}//end of MemberTest
 	
