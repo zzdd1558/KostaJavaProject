@@ -133,7 +133,7 @@ public class ItemDao {
 			ps.setString(1, name);
 			rs = ps.executeQuery();
 
-			// ResultSet에 담겨있는 정보 저장
+			// ResultSet에 담겨있는 정보 배열에 저장
 			while (rs.next()) {
 
 				int num = rs.getInt("item_num");
@@ -144,7 +144,6 @@ public class ItemDao {
 
 				list.add(new ItemDTO(num, company, name, etc, price, code));
 				list.get(list.size()-1).setListName(rs.getString("kind"));
-				
 			}
 
 		} catch (SQLException e) {
@@ -156,8 +155,6 @@ public class ItemDao {
 
 		return list;
 	}
-	
-	
 	
 	/** 가격으로 부품 검색 */
 	public void searchForPartsByPrice() {

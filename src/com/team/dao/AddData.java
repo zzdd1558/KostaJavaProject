@@ -43,6 +43,7 @@ public class AddData {
 		MemberDao.deleteAll();
 		OrdersDao.deleteAll();
 		DetailDao.deleteAll();
+		
 		// 모든 데이터 삽입 foreign key 를 포함하는 순서로 생성
 		SequenceDao.add();
 		addItemListData();
@@ -55,8 +56,7 @@ public class AddData {
 
 		int result = 0;
 		for (String s : list) {
-			System.out.println(s);
-			result = ItemListDao.add(new ItemListDTO(list.indexOf(s) + "", s.toLowerCase()));
+			result = ItemListDao.add(new ItemListDTO(list.indexOf(s) + "", s));
 
 			if (result == 0) {
 				System.out.println("실패했습니다.");
@@ -104,19 +104,12 @@ public class AddData {
 					// 6.Power 7.Ram 8.ssd
 					// 9.vga
 					items.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s) + ""));
-
-					// 결과 확인
-
-					// 0이면 추가 실패.
-					if (result == 0) {
-						System.out.println("실패했습니다.1");
-						break;
-					} // end of if
+					
 				} // end of for
-				
-				ItemDao.add(items);
 
 			} // end of for
+			
+			ItemDao.add(items);
 			
 		} catch (ParserConfigurationException | SAXException |
 

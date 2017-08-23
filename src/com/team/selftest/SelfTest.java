@@ -1,22 +1,35 @@
 package com.team.selftest;
 
+import java.util.List;
 import java.util.Scanner;
 
+import com.team.dao.AddData;
+import com.team.dao.ItemDao;
 import com.team.dao.MemberDao;
+import com.team.dto.ItemDTO;
 import com.team.dto.MemberDTO;
-import com.team.join.JoinService;
-import com.team.join.Login;
 
 public class SelfTest {
 	
 	public static void main(String[] args) {
 		
 //		MemberTest();
-//		AddData.initiate();
-		new Login().start();
-		
+		AddData.initiate();
+//		new Login().start();
+		ItemTest();
 		
 	}//end of main
+	
+	private static void ItemTest() {
+		
+		List <ItemDTO> list = ItemDao.getPartName("NCORE 볼트론");
+		
+		for(ItemDTO it: list)
+			System.out.println(it.toString());
+		
+	}
+	
+	
 	
 	private static void OrderTest() {
 		

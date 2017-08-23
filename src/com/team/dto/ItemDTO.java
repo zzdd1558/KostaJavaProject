@@ -81,4 +81,12 @@ public class ItemDTO {
 	public void setListName(String listName) {
 		this.listName = listName;
 	}
+
+	@Override
+	public String toString() {
+		return "ItemDTO [itemNum=" + itemNum + ", company=" + company + ", itemName=" + itemName + ", etc=" + etc
+				+ ", price=" + price + ", code=" + code + ", listName=" + listName + "]";
+	}
+	
+	
 }
