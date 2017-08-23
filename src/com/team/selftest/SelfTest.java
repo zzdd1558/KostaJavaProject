@@ -23,8 +23,9 @@ public class SelfTest {
 	private static void ItemTest() {
 		
 		List <ItemDTO> list = 
-				ItemDao.getPartName("CPU");
+//				ItemDao.getPartName("CPU");
 //				ItemDao.searchForPartsByPrice("40000", "50000");
+				ItemDao.searchForPartsByCompany("WD");
 		
 		for(ItemDTO it: list)
 			System.out.println(it.toString());

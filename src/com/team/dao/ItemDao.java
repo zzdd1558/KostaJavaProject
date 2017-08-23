@@ -202,7 +202,8 @@ public class ItemDao {
 	public static List<ItemDTO> searchForPartsByName(String name) {
 		
 		List<ItemDTO> list = null;
-		sql = "select * from items i, itemlist il where i.code = il.code and item_name = ?";
+		sql = "select * from items i, itemlist il where i.code = il.code and item_name = ?"
+				+ " order by item_num";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -241,8 +242,46 @@ public class ItemDao {
 	} // end of searchForpartsByPrice
 
 	/** 제조사로 부품 검색 */
-	public void searchForPartsByCompany() {
+	public static List<ItemDTO> searchForPartsByCompany(String company) {
+		
+		List<ItemDTO> list = null;
+		sql = "select * from items i, itemlist il where i.code = il.code and company = ?"
+				+ " order by item_num";
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
 
+		try {
+
+			// DB Connection과 쿼리문 생성 및 실행
+			list = new ArrayList<>();
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, company);
+			rs = ps.executeQuery();
+
+			// ResultSet에 담겨있는 정보 배열에 저장
+			while (rs.next()) {
+
+				int num = rs.getInt("item_num");
+				String code = rs.getString("code");
+				String etc = rs.getString("etc");
+				String price = rs.getString("price");
+				String name = rs.getString("item_name");
+
+				list.add(new ItemDTO(num, company, name, etc, price, code));
+				list.get(list.size() - 1).setListName(rs.getString("kind"));
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+
+		return list;
+		
 	} // end of searchForpartsByPrice
 
 }// end of ItemDao
