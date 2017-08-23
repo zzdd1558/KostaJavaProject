@@ -27,10 +27,11 @@ public class MemberDao {
 		sql = "insert into member values(?,?,?,?,?,?,?)";
 
 		try {
-
+			
 			// DB Connection 생성 및 쿼리문 생성
 			c = DBUtil.getConnection();
 			ps = c.prepareStatement(sql);
+			
 			ps.setString(1, m.getId());
 			ps.setString(2, m.getPwd());
 			ps.setString(3, m.getName());

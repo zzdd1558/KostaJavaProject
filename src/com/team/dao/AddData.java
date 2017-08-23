@@ -43,7 +43,6 @@ public class AddData {
 		MemberDao.deleteAll();
 		OrdersDao.deleteAll();
 		DetailDao.deleteAll();
-		
 		// 모든 데이터 삽입 foreign key 를 포함하는 순서로 생성
 		SequenceDao.add();
 		addItemListData();
@@ -55,10 +54,9 @@ public class AddData {
 	private static void addItemListData() {
 		
 		int result = 0;
-		
 		for(String s:list) {
-
-			result = ItemListDao.add(new ItemListDTO(list.indexOf(s)+"",s));
+			System.out.println(s);
+			result = ItemListDao.add(new ItemListDTO(list.indexOf(s)+"",s.toLowerCase()));
 			
 			if(result == 0) {
 				System.out.println("실패했습니다.");
@@ -72,7 +70,6 @@ public class AddData {
 	private static void addItemData() {
 
 		int result = 0;// 저장 성공 여부를 저장할 변수
-
 		try {
 			// DocumentBuilder를 생성해주는 팩토리 - 객체의 종류를 서브클래스에서 정의
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -109,7 +106,7 @@ public class AddData {
 
 					// 0이면 추가 실패.
 					if (result == 0) {
-						System.out.println("실패했습니다.");
+						System.out.println("실패했습니다.1");
 						break;
 					}
 				}

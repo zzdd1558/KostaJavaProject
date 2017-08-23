@@ -71,44 +71,67 @@ public class ItemDao {
 
 	/** 부품 번호를 통해 부품 정보 가져오기 */
 	public static ItemDTO getItemByNum(int num) {
-		
+
 		ItemDTO item = null;
 		sql = "select * from items i, itemlist il where i.code = il.code and item_num = ?";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		
+
 		try {
-			
-			//DB Connection과 쿼리문 생성 및 실행
+
+			// DB Connection과 쿼리문 생성 및 실행
 			c = DBUtil.getConnection();
 			ps = c.prepareStatement(sql);
 			ps.setInt(1, num);
 			rs = ps.executeQuery();
-			
-			//ResultSet에 담겨있는 정보 저장
-			if(rs.next()) {
-				
+
+			// ResultSet에 담겨있는 정보 저장
+			if (rs.next()) {
+
 				String name = rs.getString("item_name");
 				String code = rs.getString("code");
 				String etc = rs.getString("etc");
 				String price = rs.getString("price");
 				String company = rs.getString("company");
-				
-				item = new ItemDTO(num,company,name,etc,price,code);
-				
+
+				item = new ItemDTO(num, company, name, etc, price, code);
+
 				item.setListName(rs.getString("kind"));
 			}
-			
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			DBUtil.close(c, ps, rs);
 		}
-		
+
 		return item;
-		
+
 	}// end of getItemByNum
+
+	/** */
+	public void getPartName(){
+		
+	}
+	
+	
+	
+	/** 가격으로 부품 검색 */
+	public void searchForPartsByPrice() {
+
+	} // end of searchForpartsByPrice
+
+	/** 이름으로 부품 검색 */
+	public void searchForPartsByName() {
+		Connection c = DBUtil.getConnection();
+		
+	} // end of searchForpartsByPrice
+
+	/** 제조사로 부품 검색 */
+	public void searchForPartsByCompany() {
+
+	} // end of searchForpartsByPrice
 
 }// end of ItemDao
