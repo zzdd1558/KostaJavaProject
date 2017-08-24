@@ -1,8 +1,5 @@
 package com.team.order;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 import com.team.cart.CartInfoService;
@@ -46,8 +43,9 @@ public class OrdersInfoService implements Service {
 				System.out.println("수취인 연락처 입력 : ");
 				odto.setPhone(scan.nextLine());
 
-			
 				odto.setId(id);
+				
+				
 				// DAO 클래스의 정보 입력 메소드 호출
 				if (OrdersDao.add(odto) != 0)
 					System.out.println("주문 성공!");
@@ -62,12 +60,10 @@ public class OrdersInfoService implements Service {
 			default:
 				System.out.println("잘못된 번호를 입력하셨습니다. 다시 입력해 주세요.");
 				break;
-			}
+			} // end of switch
 
-		}
-
-
+		} // end of while
 		
-	}
+	} // end of exec
 
-}
+} // end of OrdersInfoService
