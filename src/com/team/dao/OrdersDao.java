@@ -16,11 +16,12 @@ public class OrdersDao {
 
 	/* 함수 */
 	/** Orders 레코드를 추가하는 함수 */
-	public static void add(OrdersDTO o) {
+	public static int add(OrdersDTO o) {
 
+		int result = 0;
 		Connection c = null;
 		PreparedStatement ps = null;
-		sql = "insert into orders values(order_num.nextval,?,?,?,?,?)";
+		sql = "insert into orders values(order_num.nextval,?,?,?,?,to_date(sysdate,'YY/MM/DD HH:MI:SS'))";
 
 		try {
 
@@ -30,9 +31,8 @@ public class OrdersDao {
 			ps.setString(3, o.getName());
 			ps.setString(2, o.getAddr());
 			ps.setString(4, o.getPhone());
-			ps.setString(5, o.getOrderTime());
 
-			ps.executeUpdate();
+			result = ps.executeUpdate();
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -41,6 +41,7 @@ public class OrdersDao {
 			DBUtil.close(c, ps);
 		}
 
+		return result;
 	}// end of add
 
 	/** Orders 레코드를 모두 삭제하는 함수 */

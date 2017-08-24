@@ -3,21 +3,21 @@ package com.team.selftest;
 import java.util.List;
 import java.util.Scanner;
 
-import com.team.dao.AddData;
 import com.team.dao.ItemDao;
 import com.team.dao.MemberDao;
+import com.team.dao.OrdersDao;
 import com.team.dto.ItemDTO;
 import com.team.dto.MemberDTO;
-import com.team.join.Login;
+import com.team.order.OrdersInfoService;
 
 public class SelfTest {
 	
 	public static void main(String[] args) {
 		
-//		MemberTest();
+		MemberTest();
 //		AddData.initiate();
-		
-		new Login().start();
+		OrderTest();
+//		new Login().start();
 //		ItemTest();
 		
 	}//end of main
@@ -38,7 +38,12 @@ public class SelfTest {
 	
 	private static void OrderTest() {
 		
+		OrdersDao.deleteAll();
 		
+		Scanner scan = new Scanner(System.in);
+		String id = "scott";
+		
+		new OrdersInfoService().exec(scan, id);
 		
 	}//end of OrderTest
 	
