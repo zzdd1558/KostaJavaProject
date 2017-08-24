@@ -34,7 +34,7 @@ public class CartInfoService implements Service {
 		int key = Integer.parseInt(scan.nextLine());
 		
 		switch (key) {
-		case 1:
+		case 1:    
 			service = new OrdersInfoService();
 			service.exec(scan, id, map);
 			break;

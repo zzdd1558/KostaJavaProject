@@ -9,8 +9,9 @@ public class MemberDTO {
 	private String mail; // col : mail
 	private String addr; // col : addr
 	private String phone; // col : phone
-
+	private String saltKey;
 	// 생성자
+
 
 	public MemberDTO() {
 		// TODO Auto-generated constructor stub
@@ -21,6 +22,10 @@ public class MemberDTO {
 		return "MemberDTO [id=" + id + ", name=" + name + ", mail=" + mail + ", addr=" + addr + ", phone=" + phone
 				+ "]";
 	}
+	
+	public String test(){
+		return "비밀번호 : " + this.getPwd() + " ,  암호키 " + this.getSaltKey();
+	}
 
 	public MemberDTO(String id, String name, String mail, String addr, String phone) {
 		super();
@@ -29,6 +34,21 @@ public class MemberDTO {
 		this.mail = mail;
 		this.addr = addr;
 		this.phone = phone;
+	}
+	
+	
+
+	public MemberDTO(String id, String pwd, String name, String birth, String mail, String addr, String phone,
+			String saltKey) {
+		super();
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+		this.birth = birth;
+		this.mail = mail;
+		this.addr = addr;
+		this.phone = phone;
+		this.saltKey = saltKey;
 	}
 
 	public MemberDTO(String id, String pwd, String name, String birth, String mail, String addr, String phone) {
@@ -43,6 +63,17 @@ public class MemberDTO {
 	}
 
 	// setter , getter
+	
+
+	public String getSaltKey() {
+		return saltKey;
+	}
+
+	public void setSaltKey(String saltKey) {
+		this.saltKey = saltKey;
+	}
+	
+	
 	public String getId() {
 		return id;
 	}

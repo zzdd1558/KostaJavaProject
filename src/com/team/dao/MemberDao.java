@@ -21,7 +21,7 @@ public class MemberDao {
 		int result = 0;
 		Connection c = null;
 		PreparedStatement ps = null;
-		sql = "insert into member values(?,?,?,?,?,?,?)";
+		sql = "insert into member values(?,?,?,?,?,?,?,?)";
 
 		try {
 			
@@ -36,7 +36,7 @@ public class MemberDao {
 			ps.setString(5, m.getMail());
 			ps.setString(6, m.getAddr());
 			ps.setString(7, m.getPhone());
-
+			ps.setString(8, m.getSaltKey());
 			result = ps.executeUpdate();
 
 		} catch (SQLException e) {
@@ -213,5 +213,42 @@ public class MemberDao {
 		return m;
 		
 	}//end of searchMember
+	
+	
+	/** 아이디와 일치하는 회원 정보 가져오기 */
+	public static MemberDTO getPwdAndKey(String id) {
+		MemberDTO m = null;
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		sql = "select pwd , secret_key from member where id = ?";
+		
+		try {
+			
+			//DBConnection, 쿼리문 생성 및 실행
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setString(1, id);
+			rs = ps.executeQuery();
+			
+			//아이디와 일치하는 맴버가 존재한다면 객체 생성
+			if(rs.next()) {
+				m = new MemberDTO();
+				m.setPwd(rs.getString("pwd"));
+				m.setSaltKey(rs.getString("secret_key"));
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+		
+		return m;
+		
+	}//end of searchMember
+	
+	
 
 } // end of class
