@@ -1,5 +1,6 @@
 package com.team.join;
 
+import java.util.Map;
 import java.util.Scanner;
 
 import com.team.dao.MemberDao;
@@ -11,7 +12,7 @@ import com.team.util.Service;
 public class LoginService implements Service {
 
 	@Override
-	public void exec(Scanner scan,String ad) {
+	public void exec(Scanner scan,String ad , Map<Integer,Integer> map) {
 
 		//아이디 비밀번호 입력받기
 		System.out.print("아이디를 입력하세요.");
@@ -27,7 +28,7 @@ public class LoginService implements Service {
 			System.out.println("로그인에 실패했습니다.");
 		else {
 			System.out.println("로그인에 성공했습니다.");
-			new MainInfoService().exec(scan, id);;
+			new MainInfoService().exec(scan, id , map);;
 		}
 		
 	}//end of exec

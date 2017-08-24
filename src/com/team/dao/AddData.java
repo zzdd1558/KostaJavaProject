@@ -103,7 +103,7 @@ public class AddData {
 					// 0.Case 1.CPU 2.HDD 3.MainBoard 4.ODD 5.OperatingSystem
 					// 6.Power 7.Ram 8.ssd
 					// 9.vga
-					items.add(new ItemDTO(0, company, name, etc, price, list.indexOf(s) + ""));
+					items.add(new ItemDTO(0, company, name, etc, Integer.parseInt(price), list.indexOf(s) + ""));
 					
 				} // end of for
 

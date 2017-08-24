@@ -4,11 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import com.team.dto.MemberDTO;
-import com.team.test.Test;
 import com.team.util.DBUtil;
 
 /** DB의 Member 테이블 데이터 추가,제거,수정을 담당하는 클래스 */

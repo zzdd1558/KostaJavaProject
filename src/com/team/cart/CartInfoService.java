@@ -1,7 +1,6 @@
 package com.team.cart;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -15,11 +14,10 @@ public class CartInfoService implements Service {
 	
 	Service service = null;
 	@Override
-	public void exec(Scanner scan,String id) {
+	public void exec(Scanner scan,String id , Map<Integer,Integer> map) {
 		// TODO Auto-generated method stub
 		
 		// Search(구매하려고 담은 목록) 보여주기
-		Map<Integer, Integer> map = new HashMap<>();
 		List<ItemDTO> list = new ArrayList<>();
 		
 		for(int n : map.keySet()) {		
@@ -38,7 +36,7 @@ public class CartInfoService implements Service {
 		switch (key) {
 		case 1:
 			service = new OrdersInfoService();
-			service.exec(scan, id);
+			service.exec(scan, id, map);
 			break;
 			
 		case 2:

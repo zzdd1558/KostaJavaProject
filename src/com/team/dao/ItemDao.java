@@ -33,7 +33,7 @@ public class ItemDao {
 				ps.setString(1, item.getCompany());
 				ps.setString(2, item.getItemName());
 				ps.setString(3, item.getEtc());
-				ps.setString(4, item.getPrice());
+				ps.setInt(4, item.getPrice());
 				ps.setString(5, item.getCode());
 
 				// 쿼리문을 실행하고 그 결과를 저장
@@ -96,7 +96,7 @@ public class ItemDao {
 				String name = rs.getString("item_name");
 				String code = rs.getString("code");
 				String etc = rs.getString("etc");
-				String price = rs.getString("price");
+				int price = Integer.parseInt(rs.getString("price"));
 				String company = rs.getString("company");
 
 				item = new ItemDTO(num, company, name, etc, price, code);
@@ -138,7 +138,7 @@ public class ItemDao {
 				String name = rs.getString("item_name");
 				String code = rs.getString("code");
 				String etc = rs.getString("etc");
-				String price = rs.getString("price");
+				int price = Integer.parseInt(rs.getString("price"));
 				String company = rs.getString("company");
 
 				list.add(new ItemDTO(num, company, name, etc, price, code));
@@ -180,7 +180,7 @@ public class ItemDao {
 				String name = rs.getString("item_name");
 				String code = rs.getString("code");
 				String etc = rs.getString("etc");
-				String price = rs.getString("price");
+				int price = Integer.parseInt(rs.getString("price"));
 				String company = rs.getString("company");
 
 				list.add(new ItemDTO(num, company, name, etc, price, code));
@@ -222,7 +222,7 @@ public class ItemDao {
 				int num = rs.getInt("item_num");
 				String code = rs.getString("code");
 				String etc = rs.getString("etc");
-				String price = rs.getString("price");
+				int price = Integer.parseInt(rs.getString("price"));
 				String company = rs.getString("company");
 
 				list.add(new ItemDTO(num, company, name, etc, price, code));
@@ -264,7 +264,7 @@ public class ItemDao {
 				int num = rs.getInt("item_num");
 				String code = rs.getString("code");
 				String etc = rs.getString("etc");
-				String price = rs.getString("price");
+				int price = Integer.parseInt(rs.getString("price"));
 				String name = rs.getString("item_name");
 
 				list.add(new ItemDTO(num, company, name, etc, price, code));
@@ -306,7 +306,7 @@ public class ItemDao {
 				String cpmpany = rs.getString("company");
 				String code = rs.getString("code");
 				String etc = rs.getString("etc");
-				String price = rs.getString("price");
+				int price = Integer.parseInt(rs.getString("price"));
 				String name = rs.getString("item_name");
 				
 				list.add(new ItemDTO(num, cpmpany, name, etc, price, code));
@@ -326,6 +326,42 @@ public class ItemDao {
 	
 	
 	 
+	public List<ItemDTO> partsMinAndMaxPrice(int minPrice , int maxPrice) {
+		List<ItemDTO> list = null;
+		sql = "SELECT * FROM items i INNER JOIN itemlist il ON i.code = il.code WHERE price BETWEEN ? AND ?";
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+
+			// DB Connection과 쿼리문 생성 및 실행
+			list = new ArrayList<>();
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			ps.setInt(1, minPrice);
+			ps.setInt(2, maxPrice);
+			rs = ps.executeQuery();
+			// ResultSet에 담겨있는 정보 배열에 저장
+			while (rs.next()) {
+				int num = rs.getInt("item_num");
+				String company = rs.getString("company");
+				String code = rs.getString("code");
+				String etc = rs.getString("etc");
+				int price = Integer.parseInt(rs.getString("price"));
+				String name = rs.getString("item_name");
+				list.add(new ItemDTO(num,company,name,etc,price,code));
+				list.get(list.size() - 1).setListName(rs.getString("kind"));
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+		return list;
+	}
 	
 	public List<ItemDTO> partsCompanyConfirm() {
 		// TODO Auto-generated method stub

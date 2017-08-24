@@ -1,6 +1,5 @@
 <computer>
 	<header>
-		<num>제품 번호</num>
 		<name>제품 이름</name>
 		<company>제조 회사</company>
 		<price>가격</price>
@@ -9,140 +8,120 @@
 		</etc>
 	</header>
 	<case>
-		<num>1</num>
 		<name>850 EVO Series</name>
 		<company>삼성전자</company>
 		<price>105300</price>
 		<etc>내장형 / SATA3(6Gb/s) / 3D낸드 / 최대 540MB/s / 최대 520MB/s / 5년</etc>
 	</case>
 	<case>
-		<num>2</num>
 		<name>960 EVO M.2 2280</name>
 		<company>삼성전자</company>
 		<price>149500</price>
 		<etc>내장형 / PCIe3.0x4 (32GT/s) / 3D낸드 / 최대 3,200MB/s / 최대 1,500MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>3</num>
 		<name>850 PRO</name>
 		<company>삼성전자</company>
 		<price>154900</price>
 		<etc>내장형 / SATA3(6Gb/s) / 3D낸드 / 최대 550MB/s / 최대 520MB/s / 10년 제한 보증</etc>
 	</case>
 	<case>
-		<num>4</num>
 		<name>750 EVO</name>
 		<company>삼성전자</company>
 		<price>118000</price>
 		<etc>내장형 / SATA3 (6Gb/s) / TLC 기반 / 최대 540MB/s / 최대 520MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>5</num>
 		<name>960 PRO M.2 2280</name>
 		<company>삼성전자</company>
 		<price>372900</price>
 		<etc>내장형 / PCIe3.0x4 (32GT/s) / 3D낸드 / 최대 3,500MB/s / 최대 2,100MB/s / 5년</etc>
 	</case>
 	<case>
-		<num>6</num>
 		<name>Green</name>
 		<company>WD</company>
 		<price>91000</price>
 		<etc>내장형 / SATA3 (6Gb/s) / 3D낸드 / 최대 540MB/s / 최대 430MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>7</num>
 		<name>BLUE</name>
 		<company>WD</company>
 		<price>102800</price>
 		<etc>내장형 / SATA3 (6Gb/s) / 3D낸드 / 최대 540MB/s / 최대 500MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>8</num>
 		<name>Black M.2 2280</name>
 		<company>WD</company>
 		<price>136900</price>
 		<etc>내장형 / PCIe3.0x4 (32GT/s) / 3D낸드 / 최대 2,050MB/s / 최대 700MB/s / 5년</etc>
 	</case>
 	<case>
-		<num>9</num>
 		<name>My Passport</name>
 		<company>WD</company>
 		<price>127000</price>
 		<etc>외장형 / USB 3.1 / 3D낸드 / 최대 515MB/s / 최대 515MB/s / 없음</etc>
 	</case>
 	<case>
-		<num>10</num>
 		<name>Green M.2 2280</name>
 		<company>WD</company>
 		<price>102690</price>
 		<etc>내장형 / SATA3 (6Gb/s) / 3D낸드 / 최대 540MB/s / 최대 430MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>11</num>
 		<name>Crucial MX300</name>
 		<company>마이크론</company>
 		<price>107500</price>
 		<etc>내장형 / SATA3 (6Gb/s) / TLC(기타) / 최대 530MB/s / 최대 500MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>12</num>
 		<name>Crucial MX300</name>
 		<company>마이크론</company>
 		<price>107400</price>
 		<etc>내장형 / SATA3 (6Gb/s) / 3D낸드 / 최대 530MB/s / 최대 500MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>13</num>
 		<name>Crucial MX300 M.2 2280</name>
 		<company>마이크론</company>
 		<price>111500</price>
 		<etc>내장형 / SATA3 (6Gb/s) / 3D낸드 / 최대 530MB/s / 최대 500MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>14</num>
 		<name>Crucial MX200 M.2 2280</name>
 		<company>마이크론</company>
 		<price>110000</price>
 		<etc>내장형 / SATA3 (6Gb/s) / MLC(토글) / 최대 555MB/s / 최대 550MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>15</num>
 		<name>Crucial MX200</name>
 		<company>마이크론</company>
 		<price>326290</price>
 		<etc>내장형 / SATA3(6Gb/s) / MLC(토글) / 555MB/s / 500MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>16</num>
 		<name>SSD PLUS</name>
 		<company>Sandisk</company>
 		<price>91000</price>
 		<etc>내장형 / SATA3(6Gb/s) / 3D낸드 / 최대 530MB/s / 최대 400MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>17</num>
 		<name>Z410</name>
 		<company>Sandisk</company>
 		<price>94800</price>
 		<etc>내장형 / SATA3(6Gb/s) / TLC(토글) / 최대 535MB/s / 최대 410MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>18</num>
 		<name>Z400s</name>
 		<company>Sandisk</company>
 		<price>108490</price>
 		<etc>내장형 / SATA3(6Gb/s) / MLC(낸드) / 최대 549MB/s / 최대 330MB/s / 5년</etc>
 	</case>
 	<case>
-		<num>19</num>
 		<name>Extreme 500</name>
 		<company>Sandisk</company>
 		<price>139240</price>
 		<etc>외장형 / USB 3.0 / 확인요망 / 최대 415MB/s / 최대 340MB/s / 3년</etc>
 	</case>
 	<case>
-		<num>20</num>
 		<name>Sandisk X400</name>
 		<company>Sandisk</company>
 		<price>115500</price>

@@ -6,7 +6,7 @@ public class ItemDTO {
 	private String company; // col : company
 	private String itemName; // col : item_name
 	private String etc; // col : etc
-	private String price; // col : price
+	private int price; // col : price
 	private String code; // col : code
 	private String listName;
 	// 생성자
@@ -19,7 +19,7 @@ public class ItemDTO {
 		this.company = company;
 	}
 
-	public ItemDTO(int itemNum, String company, String itemName, String etc, String price, String code) {
+	public ItemDTO(int itemNum, String company, String itemName, String etc, int price, String code) {
 		super();
 		this.itemNum = itemNum;
 		this.company = company;
@@ -62,11 +62,11 @@ public class ItemDTO {
 		this.etc = etc;
 	}
 
-	public String getPrice() {
+	public int getPrice() {
 		return price;
 	}
 
-	public void setPrice(String price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 

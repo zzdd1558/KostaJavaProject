@@ -1,5 +1,6 @@
 package com.team.searchParts;
 
+import java.util.Map;
 import java.util.Scanner;
 
 import com.team.util.Service;
@@ -7,7 +8,7 @@ import com.team.util.Service;
 public class SearchPartsService implements Service {
 
 	@Override
-	public void exec(Scanner scan, String id) {
+	public void exec(Scanner scan, String id , Map<Integer,Integer> map) {
 		// TODO Auto-generated method stub
 		Service service = null;
 		boolean check = true;
@@ -25,15 +26,15 @@ public class SearchPartsService implements Service {
 			switch (select) {
 			case 1:
 				service = new SearchOfPriceService();
-				service.exec(scan, id);
+				service.exec(scan, id , map);
 				break;
 			case 2:
 				service = new SearchOfCompanyService();
-				service.exec(scan, id);
+				service.exec(scan, id, map);
 				break;
 			case 3:
 				service = new SearchOfNameService();
-				service.exec(scan, id);
+				service.exec(scan, id, map);
 				break;
 
 			case 4:

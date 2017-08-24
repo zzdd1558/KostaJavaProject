@@ -1,5 +1,6 @@
 package com.team.order;
 
+import java.util.Map;
 import java.util.Scanner;
 
 import com.team.cart.CartInfoService;
@@ -10,7 +11,7 @@ import com.team.util.Service;
 public class OrdersInfoService implements Service {
 
 	@Override
-	public void exec(Scanner scan, String id) {
+	public void exec(Scanner scan, String id , Map<Integer, Integer> map) {
 		// TODO Auto-generated method stub
 		OrdersDTO odto = new OrdersDTO();
 		scan.nextLine();
@@ -54,7 +55,7 @@ public class OrdersInfoService implements Service {
 				break;
 
 			case 2:
-				new CartInfoService().exec(scan, id);
+				new CartInfoService().exec(scan, id, map);
 				break;
 
 			default:

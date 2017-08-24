@@ -1,5 +1,6 @@
 package com.team.mypage;
 
+import java.util.Map;
 import java.util.Scanner;
 
 import com.team.dao.MemberDao;
@@ -10,7 +11,7 @@ import com.team.util.Service;
 public class MemberInfoService implements Service {
 
 	@Override
-	public void exec(Scanner scan, String id) {
+	public void exec(Scanner scan, String id , Map<Integer, Integer> map) {
 		// TODO Auto-generated method stub
 		// 기존 회원정보 출력
 		MemberDTO member = MemberDao.searchMember(id);
@@ -56,7 +57,7 @@ public class MemberInfoService implements Service {
 		else
 			System.out.println("실패입니다.");
 
-		new MainInfoService().exec(scan, id);
+		new MainInfoService().exec(scan, id , map);
 
 	}
 

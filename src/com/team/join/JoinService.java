@@ -1,5 +1,6 @@
 package com.team.join;
 
+import java.util.Map;
 import java.util.Scanner;
 
 import com.team.dao.MemberDao;
@@ -10,7 +11,7 @@ import com.team.util.Service;
 public class JoinService implements Service {
 
 	@Override
-	public void exec(Scanner scan,String id) {
+	public void exec(Scanner scan,String id, Map<Integer,Integer> map) {
 
 		MemberDTO m = new MemberDTO();
 		

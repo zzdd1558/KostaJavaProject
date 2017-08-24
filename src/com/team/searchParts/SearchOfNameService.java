@@ -1,8 +1,10 @@
 package com.team.searchParts;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
+import com.team.cart.CartInfoService;
 import com.team.dao.ItemDao;
 import com.team.dto.ItemDTO;
 import com.team.util.Service;
@@ -11,15 +13,16 @@ public class SearchOfNameService implements Service {
 
 	/** 이름으로 부품 검색 */
 	@Override
-	public void exec(Scanner scan, String id) {
+	public void exec(Scanner scan, String id, Map<Integer, Integer> map) {
 		// TODO Auto-generated method stub
+
 		ItemDao itemDao = new ItemDao();
 		boolean check = true;
 		while (check) {
 
 			System.out.println(" --------------- 부품 종류 ---------------");
-			System.out.println("1. 부품의 종류 확인하기");
-			System.out.println("2. 이름으로 바로 검색");
+			System.out.println("1. 구매할 부품의 종류 확인하기");
+			System.out.println("2. 부품 이름으로 구매하기");
 			System.out.println("3. 뒤로가기");
 			System.out.println(" ----------------------------------------- ");
 			System.out.print(" 입력 : ");
@@ -30,7 +33,15 @@ public class SearchOfNameService implements Service {
 				partsConfirm(scan, itemDao);
 				break;
 			case 2:
-				searchByPartName(scan , itemDao);
+				searchByPartName(scan, itemDao, map);
+				System.out.println("1. 주문하기       2. 계속 쇼핑하기");
+				int secondSelect = scan.nextInt();
+				scan.nextLine();
+				if (secondSelect == 1) {
+					Service service = new CartInfoService();
+					service.exec(scan, id, map);
+				}
+
 				break;
 			case 3:
 				check = false;
@@ -44,17 +55,22 @@ public class SearchOfNameService implements Service {
 		}
 	} // end of exec
 
-	/** 부품 이름으로 바로 검색하기 */
-	public static void searchByPartName(Scanner scan, ItemDao itemDao) {
-
+	/**
+	 * 부품 이름으로 바로 검색하기
+	 * 
+	 * @return
+	 */
+	public static void searchByPartName(Scanner scan, ItemDao itemDao, Map<Integer, Integer> map) {
 		System.out.print("부품 이름을 입력하세요 : ");
 		String partsName = scan.nextLine();
 
+		System.out.print("구매할 부품의 갯수 : ");
+		int partsNum = scan.nextInt();
 		List<ItemDTO> list = itemDao.searchForPartsByName(partsName);
-		System.out.println(list.size());
 		for (ItemDTO item : list) {
-			System.out.println(item.toString());
-		}// end of for
+			map.put(item.getItemNum(), partsNum);
+		} // end of for
+
 	} // end of searchByPartname
 
 	/** 선택 부품 목록 확인하기 */
