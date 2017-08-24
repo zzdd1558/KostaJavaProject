@@ -13,7 +13,7 @@ import com.team.util.Service;
 public class OrdersInfoService implements Service {
 
 	@Override
-	public void exec(Scanner scan,String id) {
+	public void exec(Scanner scan, String id) {
 		// TODO Auto-generated method stub
 		OrdersDTO odto = new OrdersDTO();
 		scan.nextLine();
@@ -22,8 +22,6 @@ public class OrdersInfoService implements Service {
 		System.out.println("ID : " + id);
 		System.out.println(" -----------------------------------------");
 
-		
-		
 		boolean check = true;
 		while (check) {
 
@@ -39,7 +37,7 @@ public class OrdersInfoService implements Service {
 				// 배송지 주소 입력
 				System.out.print("배송지 주소 입력 : ");
 				odto.setAddr(scan.nextLine());
-				
+
 				// 수취인 이름
 				System.out.println("수취인 이름 입력 : ");
 				odto.setName(scan.nextLine());
@@ -49,14 +47,19 @@ public class OrdersInfoService implements Service {
 				odto.setPhone(scan.nextLine());
 
 				// 주문 시간
-//				Date d = new Date();
+				// Date d = new Date();
 				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
 				String strDate = dateFormat.format(Calendar.getInstance().getTime());
 
 				odto.setOrderTime(strDate);
 				odto.setId(id);
+				// DAO 클래스의 정보 입력 메소드 호출
+				if (OrdersDao.add(odto) != 0)
+					System.out.println("주문 성공!");
+				else
+					System.out.println("주문 실패!");
 				break;
-			
+
 			case 2:
 				new CartInfoService().exec(scan, id);
 				break;
@@ -68,10 +71,8 @@ public class OrdersInfoService implements Service {
 
 		}
 
-		
-		// DAO 클래스의 정보 입력 메소드 호출
-		OrdersDao.add(odto);
 
+		
 	}
 
 }
