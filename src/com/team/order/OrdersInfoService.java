@@ -46,12 +46,7 @@ public class OrdersInfoService implements Service {
 				System.out.println("수취인 연락처 입력 : ");
 				odto.setPhone(scan.nextLine());
 
-				// 주문 시간
-				// Date d = new Date();
-				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
-				String strDate = dateFormat.format(Calendar.getInstance().getTime());
-
-				odto.setOrderTime(strDate);
+			
 				odto.setId(id);
 				// DAO 클래스의 정보 입력 메소드 호출
 				if (OrdersDao.add(odto) != 0)
