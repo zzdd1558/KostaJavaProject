@@ -26,7 +26,7 @@ public class MemberInfoService implements Service {
 		// 회원정보 수정
 
 		System.out.println("수정할 정보 선택\n1. 이름\n2. 이메일\n3. 주소\n4. 전화번호");
-		int num = scan.nextInt();
+		int num = Integer.parseInt(scan.nextLine());
 		String update = "";
 		switch (num) {
 		case 1:

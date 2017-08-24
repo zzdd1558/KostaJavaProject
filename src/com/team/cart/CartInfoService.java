@@ -33,7 +33,7 @@ public class CartInfoService implements Service {
 		// 장바구니에 담아놓은 목록 주문하기, 수정하기
 		System.out.println("1.주문하기\n2.장바구니수정하기");
 		
-		int key = scan.nextInt();
+		int key = Integer.parseInt(scan.nextLine());
 		
 		switch (key) {
 		case 1:

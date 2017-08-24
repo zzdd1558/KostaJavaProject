@@ -1,6 +1,7 @@
 package com.team.order;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -21,24 +22,25 @@ public class OrdersInfoService implements Service {
 
 		// 배송지 주소 입력
 		System.out.println("배송지 주소 입력");
-		odto.setAddr(scan.next());
+		odto.setAddr(scan.nextLine());
 
 		// 수취인 이름
 		System.out.println("수취인 이름 입력");
-		odto.setName(scan.next());
+		odto.setName(scan.nextLine());
 
 		// 수취인 연락처
 		System.out.println("수취인 연락처 입력");
-		odto.setPhone(scan.next());
+		odto.setPhone(scan.nextLine());
 
 		// 주문 시간
-		Date d = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat();
-		System.out.println(sdf.format(d).toString());
-		odto.setOrderTime(sdf.format(d).toString());
+//		Date d = new Date();
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
+		String strDate = dateFormat.format(Calendar.getInstance().getTime());
 
+		odto.setOrderTime(strDate);
+		odto.setId(id);
+		
 		// DAO 클래스의 정보 입력 메소드 호출
-
 		OrdersDao.add(odto);
 
 	}
