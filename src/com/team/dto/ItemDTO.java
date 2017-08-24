@@ -9,10 +9,14 @@ public class ItemDTO {
 	private String price; // col : price
 	private String code; // col : code
 	private String listName;
-
 	// 생성자
 	public ItemDTO() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public ItemDTO(String company) {
+		super();
+		this.company = company;
 	}
 
 	public ItemDTO(int itemNum, String company, String itemName, String etc, String price, String code) {

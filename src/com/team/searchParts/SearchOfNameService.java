@@ -54,9 +54,8 @@ public class SearchOfNameService implements Service {
 		System.out.println(list.size());
 		for (ItemDTO item : list) {
 			System.out.println(item.toString());
-		}
-
-	}
+		}// end of for
+	} // end of searchByPartname
 
 	/** 선택 부품 목록 확인하기 */
 	public static void partsConfirm(Scanner scan, ItemDao itemDao) {

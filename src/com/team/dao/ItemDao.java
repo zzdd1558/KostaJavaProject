@@ -244,7 +244,7 @@ public class ItemDao {
 	public static List<ItemDTO> searchForPartsByCompany(String company) {
 
 		List<ItemDTO> list = null;
-		sql = "select * from items i, itemlist il where i.code = il.code and company = ?" + " order by item_num";
+		sql = "SELECT * FROM items i, itemlist il WHERE i.code = il.code and LOWER(company) = LOWER(?)" + " ORDER BY item_num";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -323,4 +323,43 @@ public class ItemDao {
 		return list;
 
 	} // end of partsConfirm
+	
+	
+	 
+	
+	public List<ItemDTO> partsCompanyConfirm() {
+		// TODO Auto-generated method stub
+		List<ItemDTO> list = null;
+		sql = "SELECT DISTINCT(company) , kind FROM items i inner join itemlist il ON i.code = il.code ORDER BY kind asc";
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+
+			// DB Connection과 쿼리문 생성 및 실행
+			list = new ArrayList<>();
+			c = DBUtil.getConnection();
+			ps = c.prepareStatement(sql);
+			rs = ps.executeQuery();
+
+			// ResultSet에 담겨있는 정보 배열에 저장
+			while (rs.next()) {
+				String cpmpany = rs.getString("company");
+				list.add(new ItemDTO(cpmpany));
+				list.get(list.size() - 1).setListName(rs.getString("kind"));
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(c, ps, rs);
+		}
+
+		return list;
+
+	} // end of partsConfirm
+	
+	
 }// end of ItemDao

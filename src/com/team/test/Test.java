@@ -20,6 +20,8 @@ public class Test {
 	public static String userId = "aaa";
 
 	public static void main(String[] args) {
+		
+		/** Test Case member data 추가*/
 		MemberTest();
 		String id = null;
 		AddData.initiate();
