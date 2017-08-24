@@ -74,7 +74,7 @@ public class SearchOfNameService implements Service {
 		System.out.println("10. ODD");
 		System.out.println(" -----------------------------------------");
 		System.out.print("선택 : ");
-		int select = scan.nextInt();
+		int select = Integer.parseInt(scan.nextLine());
 
 		switch (select) {
 		case 1:
