@@ -23,7 +23,7 @@ public class ItemDao {
 		int result = 0; // 성공 여부를 저장할 변수
 		Connection c = null;
 		PreparedStatement ps = null;
-		sql = "insert into items values(item_num.nextval,?,?,?,?,?)";
+		sql = "INSERT INTO items VALUES(item_num.nextval,?,?,?,?,?)";
 
 		try {
 			// DB Connection을 생성하고 쿼리문 생성
@@ -53,7 +53,7 @@ public class ItemDao {
 	/** 테이블 내용을 초기화 하는 함수 */
 	public static void deleteAll() {
 
-		sql = "delete from items";
+		sql = "DELETE FROM items";
 		Connection c = null;
 		PreparedStatement ps = null;
 
@@ -77,7 +77,7 @@ public class ItemDao {
 	public static ItemDTO getItemByNum(int num) {
 
 		ItemDTO item = null;
-		sql = "select * from items i, itemlist il where i.code = il.code and item_num = ?";
+		sql = "SELECT * FROM items i, itemlist il WHERE i.code = il.code AND item_num = ?";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -122,8 +122,8 @@ public class ItemDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		sql = "select * from items i, itemlist l where i.code = l.code and LOWER(l.kind) = LOWER(?)"
-				+ " order by item_num";
+		sql = "SELECT * FROM items i, itemlist l WHERE i.code = l.code and LOWER(l.kind) = LOWER(?)"
+				+ " ORDER BY item_num";
 
 		try {
 			list = new ArrayList<>();
@@ -163,8 +163,8 @@ public class ItemDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		sql = "select * from items i, itemlist l where i.code = l.code and price>= ? and price <= ?"
-				+ " order by item_num";
+		sql = "SELECT * FROM items i, itemlist l WHERE i.code = l.code AND price>= ? AND price <= ?"
+				+ " ORDER BY item_num";
 
 		try {
 			list = new ArrayList<>();
@@ -202,7 +202,7 @@ public class ItemDao {
 	public static List<ItemDTO> searchForPartsByName(String name) {
 
 		List<ItemDTO> list = null;
-		sql = "select * from items i, itemlist il where i.code = il.code and lower(item_name) = lower(?)" + " order by item_num";
+		sql = "SELECT * FROM items i, itemlist il WHERE i.code = il.code AND LOWER(item_name) = LOWER(?)" + " ORDER BY item_num";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -325,7 +325,7 @@ public class ItemDao {
 	} // end of partsConfirm
 	
 	
-	 
+	/** 입력한 최저가와 최고가 사이의 부품 출력 */
 	public List<ItemDTO> partsMinAndMaxPrice(int minPrice , int maxPrice) {
 		List<ItemDTO> list = null;
 		sql = "SELECT * FROM items i INNER JOIN itemlist il ON i.code = il.code WHERE price BETWEEN ? AND ?";
@@ -366,7 +366,7 @@ public class ItemDao {
 	public List<ItemDTO> partsCompanyConfirm() {
 		// TODO Auto-generated method stub
 		List<ItemDTO> list = null;
-		sql = "SELECT DISTINCT(company) , kind FROM items i inner join itemlist il ON i.code = il.code ORDER BY kind asc";
+		sql = "SELECT DISTINCT(company) , kind FROM items i INNER JOIN itemlist il ON i.code = il.code ORDER BY kind ASC";
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;

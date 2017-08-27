@@ -38,7 +38,7 @@ public class SequenceDao {
 					ps.close();
 
 				// 쿼리문 생성 및 실행
-				sql = "create sequence " + s + " start with 1 increment by 1";
+				sql = "CREATE sequence " + s + " start with 1 increment by 1";
 				ps = c.prepareStatement(sql);
 				ps.executeUpdate();
 
@@ -70,7 +70,7 @@ public class SequenceDao {
 					ps.close();
 
 				// 쿼리문 생성 및 실행
-				sql = "drop sequence " + s;
+				sql = "DROP sequence " + s;
 				ps = c.prepareStatement(sql);
 				ps.executeUpdate();
 			}

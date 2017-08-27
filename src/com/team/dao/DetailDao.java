@@ -19,7 +19,7 @@ public class DetailDao {
 		
 		Connection c = null;
 		PreparedStatement ps = null;
-		sql = "insert into detail values(?,?,?)";
+		sql = "INSERT INTO detail VALUES(?,?,?)";
 		
 		try {
 			
@@ -43,7 +43,7 @@ public class DetailDao {
 	/** Detail 레코드를 모두 삭제하는 함수 */
 	public static void deleteAll() {
 		
-		sql = "delete from detail";
+		sql = "DELETE FROM detail";
 		Connection c = null;
 		PreparedStatement ps = null;
 		

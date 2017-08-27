@@ -21,7 +21,7 @@ public class OrdersDao {
 		int result = 0;
 		Connection c = null;
 		PreparedStatement ps = null;
-		sql = "insert into orders values(order_num.nextval,?,?,?,?,to_date(sysdate,'YY/MM/DD HH:MI:SS'))";
+		sql = "INSERT INTO orders VALUES(order_num.nextval,?,?,?,?,to_date(sysdate,'YY/MM/DD HH:MI:SS'))";
 
 		try {
 
@@ -47,7 +47,7 @@ public class OrdersDao {
 	/** Orders 레코드를 모두 삭제하는 함수 */
 	public static void deleteAll() {
 
-		sql = "delete from orders";
+		sql = "DELETE FROM orders";
 		Connection c = null;
 		PreparedStatement ps = null;
 

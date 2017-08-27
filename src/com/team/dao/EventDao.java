@@ -19,7 +19,7 @@ public class EventDao {
 		
 		Connection c = null;
 		PreparedStatement ps = null;
-		sql = "insert into event values(event_num.nextval,?,?)";
+		sql = "INSERT INTO event VALUES(event_num.nextval,?,?)";
 		
 		try {
 			
@@ -42,7 +42,7 @@ public class EventDao {
 	/** Event 레코드를 모두 삭제하는 함수 */
 	public static void deleteAll() {
 		
-		sql = "delete from event";
+		sql = "DELETE FROM event";
 		Connection c = null;
 		PreparedStatement ps = null;
 		

@@ -21,7 +21,7 @@ public class MemberDao {
 		int result = 0;
 		Connection c = null;
 		PreparedStatement ps = null;
-		sql = "insert into member values(?,?,?,?,?,?,?,?)";
+		sql = "INSERT INTO member VALUES(?,?,?,?,?,?,?,?)";
 
 		try {
 			
@@ -52,7 +52,7 @@ public class MemberDao {
 	/** Member 레코드를 모두 삭제하는 함수 */
 	public static void deleteAll() {
 
-		sql = "delete from member";
+		sql = "DELETE FROM member";
 		Connection c = null;
 		PreparedStatement ps = null;
 
@@ -79,7 +79,7 @@ public class MemberDao {
 		Connection con = DBUtil.getConnection();
 		PreparedStatement pstmt = null;
 		int result = 0;
-		sql = "update member set " + update + " = ? " + " where id = ?";
+		sql = "UPDATE member SET " + update + " = ? " + " WHERE id = ?";
 		try {
 
 			pstmt = con.prepareStatement(sql);
@@ -106,7 +106,7 @@ public class MemberDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		sql = "select * from member where id = ?";
+		sql = "SELECT * FROM member WHERE id = ?";
 
 		try {
 
@@ -149,7 +149,7 @@ public class MemberDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		sql = "select * from member where id = ?";
+		sql = "SELECT * FROM member WHERE id = ?";
 		
 		try {
 			
@@ -181,7 +181,7 @@ public class MemberDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		sql = "select * from member where id = ?";
+		sql = "SELECT * FROM member WHERE id = ?";
 		
 		try {
 			
@@ -221,7 +221,7 @@ public class MemberDao {
 		Connection c = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		sql = "select pwd , secret_key from member where id = ?";
+		sql = "SELECT pwd , secret_key FROM member WHERE id = ?";
 		
 		try {
 			

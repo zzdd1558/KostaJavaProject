@@ -18,7 +18,7 @@ public class ItemListDao {
 	public static int add(ItemListDTO itemList) {
 
 		int result = 0; // 성공 여부를 저장할 변수
-		sql = "insert into itemlist values(?,?)";
+		sql = "INSERT INTO itemlist VALUES(?,?)";
 		Connection c = null;
 		PreparedStatement ps = null;
 
@@ -45,7 +45,7 @@ public class ItemListDao {
 	/** 테이블 내용을 초기화 하는 함수 */
 	public static void deleteAll() {
 
-		sql = "delete from itemlist";
+		sql = "DELETE FROM itemlist";
 		Connection c = null;
 		PreparedStatement ps = null;
 
