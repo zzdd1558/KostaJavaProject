@@ -1,7 +1,5 @@
 package com.team.join;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -9,6 +7,7 @@ import com.team.dao.MemberDao;
 import com.team.dto.MemberDTO;
 import com.team.main.MainInfoService;
 import com.team.util.Service;
+import com.team.util.SignUtil;
 
 /** 로그인 기능을 제공하는 클래스 */
 public class LoginService implements Service {
@@ -27,36 +26,8 @@ public class LoginService implements Service {
 		if (t == null) {
 			System.out.println("없다");
 		}
-		StringBuilder sb = null;
-		try {
-
-			// MD5
-			// 실제로 암호화할때 쓰는 암호화 방식 MD5
-			MessageDigest sha256 = MessageDigest.getInstance("SHA-256");
-
-			String hexaDecimal = t.getSaltKey();
-			byte[] buffer = new byte[hexaDecimal.length() / 2];
-			for (int i = 0; i < buffer.length; i++) {
-				buffer[i] = (byte) Integer.parseInt(hexaDecimal.substring(2 * i, 2 * i + 2), 16);
-			}
-
-			sha256.update(buffer);
-
-			byte[] md5Msg = sha256.digest(password.getBytes());
-
-			sb = new StringBuilder();
-			for (byte x : md5Msg) {
-				sb.append(String.format("%02X", x));
-			}
-
-			System.out.println(MessageDigest.isEqual(sb.toString().getBytes(), t.getPwd().getBytes()));
-			System.out.println();
-		} catch (NoSuchAlgorithmException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		if (sb.toString().equals(t.getPwd())) {
+		
+		if (SignUtil.passwordConfirm(password , t)) {
 			System.out.println("로그인에 성공했습니다.");
 			new MainInfoService().exec(scan, id, map);
 		} else {
