@@ -14,7 +14,7 @@ public class OrdersInfoService implements Service {
 	public void exec(Scanner scan, String id , Map<Integer, Integer> map) {
 		// TODO Auto-generated method stub
 		OrdersDTO odto = new OrdersDTO();
-		scan.nextLine();
+//		scan.nextLine();
 		// ID 받아 오기
 		System.out.println(" -----------------------------------------");
 		System.out.println("ID : " + id);
@@ -30,6 +30,7 @@ public class OrdersInfoService implements Service {
 			System.out.print(" 입력 : ");
 			int select = scan.nextInt();
 			scan.nextLine();
+
 			switch (select) {
 			case 1:
 				// 배송지 주소 입력
@@ -37,11 +38,11 @@ public class OrdersInfoService implements Service {
 				odto.setAddr(scan.nextLine());
 
 				// 수취인 이름
-				System.out.println("수취인 이름 입력 : ");
+				System.out.print("수취인 이름 입력 : ");
 				odto.setName(scan.nextLine());
 
 				// 수취인 연락처
-				System.out.println("수취인 연락처 입력 : ");
+				System.out.print("수취인 연락처 입력 : ");
 				odto.setPhone(scan.nextLine());
 
 				odto.setId(id);
