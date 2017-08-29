@@ -12,15 +12,21 @@ public class Login {
 	public void start() {
 
 		Scanner scan = new Scanner(System.in);
+<<<<<<< HEAD
 	AddData.initiate();
 		/*MemberDao.add(new MemberDTO("scott","tiger","�뒪罹�","90000","scott.com","�꽌�슱","01022445555"));*/
+=======
+		
+//		MemberDao.add(new MemberDTO("scott","tiger","�뒪罹�","90000","scott.com","�꽌�슱","01022445555"));
+>>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject.git
 
 		Map<Integer, Integer> map;
 		while (true) {
 			map = new HashMap<>();
 			System.out.println("기능을 선택하세요");
 			System.out.println("(1.로그인 2.회원가입)");
-			int num = Integer.parseInt(scan.nextLine());
+			int num = scan.nextInt();
+			scan.nextLine();
 
 			switch (num) {
 			case 1:

@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 
 import com.team.cart.CartInfoService;
+import com.team.join.Login;
 import com.team.mypage.MemberInfoService;
 import com.team.searchParts.SearchPartsService;
 import com.team.util.Service;
@@ -41,7 +42,7 @@ public class MainInfoService implements Service {
 				break;
 
 			case 4:
-				check = false;
+				new Login().start();
 				break;
 
 			case 5:
