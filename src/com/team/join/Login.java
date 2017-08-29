@@ -12,7 +12,7 @@ public class Login {
 	public void start() {
 
 		Scanner scan = new Scanner(System.in);
-		AddData.initiate();
+		
 //		MemberDao.add(new MemberDTO("scott","tiger","�뒪罹�","90000","scott.com","�꽌�슱","01022445555"));
 
 		Map<Integer, Integer> map;
@@ -20,7 +20,8 @@ public class Login {
 			map = new HashMap<>();
 			System.out.println("기능을 선택하세요");
 			System.out.println("(1.로그인 2.회원가입)");
-			int num = Integer.parseInt(scan.nextLine());
+			int num = scan.nextInt();
+			scan.nextLine();
 
 			switch (num) {
 			case 1:

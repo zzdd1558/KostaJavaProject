@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 
 import com.team.cart.CartInfoService;
+import com.team.join.Login;
 import com.team.mypage.MemberInfoService;
 import com.team.searchParts.SearchPartsService;
 import com.team.util.Service;
@@ -22,7 +23,7 @@ public class MainInfoService implements Service {
 		while (check) {
 
 			System.out.println("1.제품검색\n" + "2.주문상세내역\n" + "3.마이페이지\n" + "4.로그아웃");
-			int key = Integer.parseInt(scan.nextLine());
+			int key = scan.nextInt();
 
 			// search 페이지 호출.
 			switch (key) {
@@ -41,7 +42,7 @@ public class MainInfoService implements Service {
 				break;
 
 			case 4:
-				check = false;
+				new Login().start();
 				break;
 
 			case 5:
