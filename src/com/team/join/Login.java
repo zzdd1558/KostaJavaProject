@@ -4,13 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import com.team.dao.AddData;
+
 public class Login {
 
 	// 프로그램 시작
 	public void start() {
 
 		Scanner scan = new Scanner(System.in);
-		/*AddData.initiate();*/
+	AddData.initiate();
 		/*MemberDao.add(new MemberDTO("scott","tiger","�뒪罹�","90000","scott.com","�꽌�슱","01022445555"));*/
 
 		Map<Integer, Integer> map;

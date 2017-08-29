@@ -51,7 +51,6 @@ public class SearchOfPriceService implements Service {
 
 				System.out.println("1. 주문하기       2. 계속 쇼핑하기");
 				int secondSelect = scan.nextInt();
-				scan.nextLine();
 				if (secondSelect == 1) {
 					Service service = new CartInfoService();
 					service.exec(scan, id, map);
