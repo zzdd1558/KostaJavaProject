@@ -14,11 +14,7 @@ public class DBUtil {
 	/* 변수 */
 
 	private static final String DRIVER_NAME = "oracle.jdbc.driver.OracleDriver";
-<<<<<<< HEAD
-	private static final String CONNECTION_INFO = "jdbc:oracle:thin:@localhost:1521:xe";
-=======
 	private static final String CONNECTION_INFO = "jdbc:oracle:thin:@192.168.0.182:1521:XE";
->>>>>>> branch 'master' of https://github.com/zzdd1558/KostaJavaProject.git
 	private static final String CONNECTION_USER = "asdf";
 	private static final String CONNECTION_PASSWORD = "1234";
 
